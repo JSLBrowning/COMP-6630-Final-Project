@@ -49,6 +49,8 @@ class LSTMLyricGen:
             self.gloveFile = 'glove.42B.300d.txt'
         elif self.gloveInput == 'large':
             self.gloveFile = 'glove.840B.300d.txt'
+        else:
+            self.gloveFile = 'glove.6B.100d.txt'
         #allows for higher dimensional vocabulary
         self.gloveDim = int(self.gloveFile[-8:-5])
 
@@ -128,7 +130,7 @@ class LSTMLyricGen:
 
         embeddings_index = {}
         
-        gloveFile = '/home/kdl/Insync/OneDrive/School/Spring_2022/Machine_Learning/COMP-6630-Final-Project/glove.840B.300d.txt'
+        gloveFile = './' + self.gloveFile
         with open(gloveFile) as f:
             for line in f:
                 values = line.split()
