@@ -11,6 +11,7 @@ from tensorflow.keras.optimizers import Adam
 import string
 from random import randrange
 import os
+import sys
 
 
 '''enable tensorflow to run on CPU. The GPU on my computer locked up the memory
@@ -22,11 +23,15 @@ run_gpu = input('Do you want to run on the GPU? : y/n    ')
 if run_gpu == 'n':
     os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
+os.system('mkdir ./data/checkpoints')
+os.system('mkdir lyric_outputs')
 
+#make a new file to save the output
 class LSTMLyricGen:
     def __init__(self):
         print("Model Initialized")
         self.songLines = []
+        self.outputName = ''
         self.vocabulary_size = None
         self.max_seq_length = None
         self.embedding_matrix = None
@@ -41,16 +46,29 @@ class LSTMLyricGen:
         self.gloveInput = input('What glove file do you want? [small, medium, large] : ')
         self.gloveFile = ''
         self.gloveDim = 0
+        self.epoch_num = 20
         
     def retrieve_glove(self):
         if self.gloveInput == 'small':
-            self.gloveFile = 'glove.6B.100d.txt' 
+            self.gloveFile = 'glove.6B.100d.txt'
+            os.system(f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
+            self.outputName = f'{self.gloveInput}_predicted_lyrics.txt'
         elif self.gloveInput == 'medium':
             self.gloveFile = 'glove.42B.300d.txt'
+            os.system(f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
+            self.outputName = f'{self.gloveInput}_predicted_lyrics.txt'
+
         elif self.gloveInput == 'large':
             self.gloveFile = 'glove.840B.300d.txt'
+            os.system(f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
+            self.outputName = f'{self.gloveInput}_predicted_lyrics.txt'
+
         else:
             self.gloveFile = 'glove.6B.100d.txt'
+            os.system('touch ./lyric_outputs/small_predicted_lyrics.txt')
+            self.outputName = 'small_predicted_lyrics.txt'
+
+
         #allows for higher dimensional vocabulary
         self.gloveDim = int(self.gloveFile[-8:-5])
 
@@ -201,9 +219,11 @@ class LSTMLyricGen:
                                                          save_weights_only=True,
                                                          verbose=1)
         
-        history = self.model.fit(self.x_train, self.y_train, epochs=20, verbose=1, callbacks=[cp_callback])
+        history = self.model.fit(self.x_train, self.y_train, epochs=self.epoch_num, verbose=1, callbacks=[cp_callback])
 
     def makePredictions(self, userInput):
+        print('Output for lyric generation is saving into ./lyric_output.')
+        sys.stdout = open(f'./lyric_outputs/{self.outputName}', 'w')
 
         if userInput == "":
             randInt = int(randrange(0, len(list(self.tokenizer.word_index.keys()))))
@@ -235,8 +255,10 @@ class LSTMLyricGen:
                 userInput = output_line
 
             print(output_line)
+            
+        sys.stdout.close()
 
-
+        
 if __name__ == "__main__":
     lGen = LSTMLyricGen()
     lGen.retrieve_glove()
@@ -251,12 +273,13 @@ if __name__ == "__main__":
     print("Building Model. - DONE")
     print("Training Model.")
     lGen.fitModel()
+    print(f'Checkpoint saved into directory ./data/checkpoints')
     print("Training Model. - DONE")
     print("Type some words start lyric generation")
     print("Or press enter to use a random seed word")
     userInput = input().strip().lower()
     lGen.makePredictions(userInput)
-    print(f'Checkpoint saved into directory ./data/checkpoints')
+    
 
 
 
