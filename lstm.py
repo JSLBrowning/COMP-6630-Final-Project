@@ -26,7 +26,9 @@ if run_gpu == 'n':
 os.system('mkdir ./data/checkpoints')
 os.system('mkdir lyric_outputs')
 
-#make a new file to save the output
+# make a new file to save the output
+
+
 class LSTMLyricGen:
     def __init__(self):
         print("Model Initialized")
@@ -43,24 +45,28 @@ class LSTMLyricGen:
         self.max_line_len = 0
         self.dataFilePath = "./data/baseline/"
         self.checkpointPath = "./data/checkpoints"
-        self.gloveInput = input('What glove file do you want? [small, medium, large] : ')
+        self.gloveInput = input(
+            'What glove file do you want? [small, medium, large] : ')
         self.gloveFile = ''
         self.gloveDim = 0
         self.epoch_num = 20
-        
+
     def retrieve_glove(self):
         if self.gloveInput == 'small':
             self.gloveFile = 'glove.6B.100d.txt'
-            os.system(f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
+            os.system(
+                f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
             self.outputName = f'{self.gloveInput}_predicted_lyrics.txt'
         elif self.gloveInput == 'medium':
             self.gloveFile = 'glove.42B.300d.txt'
-            os.system(f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
+            os.system(
+                f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
             self.outputName = f'{self.gloveInput}_predicted_lyrics.txt'
 
         elif self.gloveInput == 'large':
             self.gloveFile = 'glove.840B.300d.txt'
-            os.system(f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
+            os.system(
+                f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
             self.outputName = f'{self.gloveInput}_predicted_lyrics.txt'
 
         else:
@@ -68,8 +74,7 @@ class LSTMLyricGen:
             os.system('touch ./lyric_outputs/small_predicted_lyrics.txt')
             self.outputName = 'small_predicted_lyrics.txt'
 
-
-        #allows for higher dimensional vocabulary
+        # allows for higher dimensional vocabulary
         self.gloveDim = int(self.gloveFile[-8:-5])
 
     def loadData(self):
@@ -130,7 +135,8 @@ class LSTMLyricGen:
         # pad each n_gram to the length of the longest n_gram
         self.max_seq_length = max([len(x) for x in input_sequences])
         input_seqs = np.array(
-            pad_sequences(input_sequences, maxlen=self.max_seq_length, padding="pre")
+            pad_sequences(input_sequences,
+                          maxlen=self.max_seq_length, padding="pre")
         )
 
         # print(max_seq_length)
@@ -147,7 +153,7 @@ class LSTMLyricGen:
         # better understand contexual relationships among the words
 
         embeddings_index = {}
-        
+
         gloveFile = './' + self.gloveFile
         with open(gloveFile) as f:
             for line in f:
@@ -158,8 +164,6 @@ class LSTMLyricGen:
                     word = values[0]
                     coeffs = np.array(values[1:], dtype="float32")
                     embeddings_index[word] = coeffs
-               
-
 
         # print(dict(list(embeddings_index.items())[0:2]))
 
@@ -195,7 +199,8 @@ class LSTMLyricGen:
                 tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(256)),
                 tf.keras.layers.Dropout(0.2),
                 tf.keras.layers.Dense(128, activation="relu"),
-                tf.keras.layers.Dense(self.vocabulary_size, activation="softmax"),
+                tf.keras.layers.Dense(
+                    self.vocabulary_size, activation="softmax"),
             ]
         )
 
@@ -211,35 +216,40 @@ class LSTMLyricGen:
         # tf.keras.utils.plot_model(self.model, show_shapes=True)
 
     def fitModel(self):
-        checkpoint_name = os.path.join(f'{self.checkpointPath}/{self.gloveFile}')
+        checkpoint_name = os.path.join(
+            f'{self.checkpointPath}/{self.gloveFile}')
         checkpoint_dir = os.path.dirname(checkpoint_name)
-        
+
         # Create a callback that saves the model's weights
         cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_name,
                                                          save_weights_only=True,
                                                          verbose=1)
-        
-        history = self.model.fit(self.x_train, self.y_train, epochs=self.epoch_num, verbose=1, callbacks=[cp_callback])
+
+        history = self.model.fit(
+            self.x_train, self.y_train, epochs=self.epoch_num, verbose=1, callbacks=[cp_callback])
 
     def makePredictions(self, userInput):
         print('Output for lyric generation is saving into ./lyric_output.')
         sys.stdout = open(f'./lyric_outputs/{self.outputName}', 'w')
 
         if userInput == "":
-            randInt = int(randrange(0, len(list(self.tokenizer.word_index.keys()))))
+            randInt = int(
+                randrange(0, len(list(self.tokenizer.word_index.keys()))))
             print(list(self.tokenizer.word_index.keys())[randInt])
 
         for i in range(0, 30):
             output_line = ""
             for k in range(0, randrange(self.ave_line_len, self.max_line_len)):
 
-                encoded_text = self.tokenizer.texts_to_sequences([userInput])[0]
+                encoded_text = self.tokenizer.texts_to_sequences([userInput])[
+                    0]
 
                 encoded_text = pad_sequences(
                     [encoded_text], maxlen=self.max_seq_length - 1, truncating="pre"
                 )
 
-                predicted = np.argmax(self.model.predict(encoded_text), axis=-1)
+                predicted = np.argmax(
+                    self.model.predict(encoded_text), axis=-1)
 
                 output_word = ""
                 for word, index in self.tokenizer.word_index.items():
@@ -255,10 +265,10 @@ class LSTMLyricGen:
                 userInput = output_line
 
             print(output_line)
-            
+
         sys.stdout.close()
 
-        
+
 if __name__ == "__main__":
     lGen = LSTMLyricGen()
     lGen.retrieve_glove()
@@ -279,35 +289,3 @@ if __name__ == "__main__":
     print("Or press enter to use a random seed word")
     userInput = input().strip().lower()
     lGen.makePredictions(userInput)
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
