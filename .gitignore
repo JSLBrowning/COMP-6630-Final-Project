@@ -127,3 +127,9 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# ignore any of the glove files
+glove.*
+
+# ignore checkpoints
+data/checkpoints/
