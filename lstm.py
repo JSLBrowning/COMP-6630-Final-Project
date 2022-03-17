@@ -7,6 +7,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 from tensorflow.keras.utils import to_categorical
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Embedding, Bidirectional
+from tensorflow.keras import regularizers
 from tensorflow.keras.optimizers import Adam
 import string
 from random import randrange
@@ -45,8 +46,10 @@ class LSTMLyricGen:
         self.max_line_len = 0
         self.dataFilePath = "./data/baseline/"
         self.checkpointPath = "./data/checkpoints"
-        self.gloveInput = input(
-            'What glove file do you want? [small, medium, large] : ')
+        print('What glove file do you want?')
+        print('[small, medium, large, none]')
+        print('(Note: invalid or empty choices will default to "none")')
+        self.gloveInput = input(':')
         self.gloveFile = ''
         self.gloveDim = 0
         self.epoch_num = 20
@@ -68,14 +71,15 @@ class LSTMLyricGen:
             os.system(
                 f'touch ./lyric_outputs/{self.gloveInput}_predicted_lyrics.txt')
             self.outputName = f'{self.gloveInput}_predicted_lyrics.txt'
-
         else:
-            self.gloveFile = 'glove.6B.100d.txt'
-            os.system('touch ./lyric_outputs/small_predicted_lyrics.txt')
-            self.outputName = 'small_predicted_lyrics.txt'
+            self.gloveFile = None
+            os.system('touch ./lyric_outputs/no_glove_lyrics.txt')
+            self.outputName = 'no_glove_lyrics.txt'
+            self.epoch_num = 100
 
         # allows for higher dimensional vocabulary
-        self.gloveDim = int(self.gloveFile[-8:-5])
+        if self.gloveFile:
+            self.gloveDim = int(self.gloveFile[-8:-5])
 
     def loadData(self):
         dataFiles = os.listdir(self.dataFilePath)
@@ -119,14 +123,14 @@ class LSTMLyricGen:
         # print(total_unique_word)
         # print(word_index)
 
-        # create n_grams
+        # create input sequences using a list of tokens
         input_sequences = []
 
         for line in self.songLines:
             token_list = self.tokenizer.texts_to_sequences([line])[0]
             # print(token_list)
             for i in range(1, len(token_list)):
-                n_gram_seq = token_list[: i + 1]
+                n_gram_seq = token_list[:i + 1]
                 input_sequences.append(n_gram_seq)
 
         # print(len(input_sequences))
@@ -151,58 +155,75 @@ class LSTMLyricGen:
 
         # processes a word embedding dictionary to help the model
         # better understand contexual relationships among the words
+		
+        if self.gloveFile:
+            embeddings_index = {}
 
-        embeddings_index = {}
+            gloveFile = './' + self.gloveFile
+            with open(gloveFile) as f:
+                for line in f:
+                    values = line.split()
+                    '''Large dataset has a lot of bad lines (lines that have multiple periods "." 
+                    at the front of the file with no actual word name for vector)'''
+                    if len(values) == self.gloveDim+1:
+                        word = values[0]
+                        coeffs = np.array(values[1:], dtype="float32")
+                        embeddings_index[word] = coeffs
 
-        gloveFile = './' + self.gloveFile
-        with open(gloveFile) as f:
-            for line in f:
-                values = line.split()
-                '''Large dataset has a lot of bad lines (lines that have multiple periods "." 
-                at the front of the file with no actual word name for vector)'''
-                if len(values) == self.gloveDim+1:
-                    word = values[0]
-                    coeffs = np.array(values[1:], dtype="float32")
-                    embeddings_index[word] = coeffs
+			# print(dict(list(embeddings_index.items())[0:2]))
 
-        # print(dict(list(embeddings_index.items())[0:2]))
+			# create a matrix which contains words from the embedding dictionary
+			# for words only in the data vocabulary
 
-        # create a matrix which contains words from the embedding dictionary
-        # for words only in the data vocabulary
+            self.embedding_matrix = np.zeros((self.vocabulary_size, self.gloveDim))
 
-        self.embedding_matrix = np.zeros((self.vocabulary_size, self.gloveDim))
-
-        for word, i in word_index.items():
-            embedding_vector = embeddings_index.get(word)
-            if embedding_vector is not None:
-                self.embedding_matrix[i] = embedding_vector
+            for word, i in word_index.items():
+                embedding_vector = embeddings_index.get(word)
+                if embedding_vector is not None:
+                    self.embedding_matrix[i] = embedding_vector
 
     def buildModel(self):
-
-        # build model
-        self.model = Sequential(
-            [
-                # the embedding layer requires in input_dim of the total number of unique words (size of vocabulary)
-                # and an output_dim which specifies the number of word embedding dimensions we want. Since this model
-                # uses the GloVe 100D we wil use 100 as our out_dim
-                tf.keras.layers.Embedding(
-                    input_dim=self.vocabulary_size,
-                    output_dim=self.gloveDim,
-                    weights=[self.embedding_matrix],
-                    input_length=self.max_seq_length - 1,
-                    trainable=False,
-                ),
-                tf.keras.layers.Bidirectional(
-                    tf.keras.layers.LSTM(256, return_sequences=True)
-                ),
-                tf.keras.layers.Dropout(0.2),
-                tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(256)),
-                tf.keras.layers.Dropout(0.2),
-                tf.keras.layers.Dense(128, activation="relu"),
-                tf.keras.layers.Dense(
-                    self.vocabulary_size, activation="softmax"),
-            ]
-        )
+		
+        if self.gloveFile:
+            # build model
+            self.model = Sequential(
+                [
+                    # the embedding layer requires in input_dim of the total number of unique words (size of vocabulary)
+                    # and an output_dim which specifies the number of word embedding dimensions we want. Since this model
+                    # uses the GloVe 100D we wil use 100 as our out_dim
+                    tf.keras.layers.Embedding(
+                        input_dim=self.vocabulary_size,
+                        output_dim=self.gloveDim,
+                        weights=[self.embedding_matrix],
+                        input_length=self.max_seq_length - 1,
+                        trainable=False,
+					),
+                    tf.keras.layers.Bidirectional(
+                        tf.keras.layers.LSTM(256, return_sequences=True)
+                    ),
+                    tf.keras.layers.Dropout(0.2),
+                    tf.keras.layers.Bidirectional(tf.keras.layers.LSTM(256)),
+                    tf.keras.layers.Dropout(0.2),
+                    tf.keras.layers.Dense(128, activation="relu"),
+                    tf.keras.layers.Dense(
+                        self.vocabulary_size, activation="softmax"),
+                ]
+            )
+        else:
+            self.model = Sequential(
+                [
+                    tf.keras.layers.Embedding(input_dim=self.vocabulary_size,
+                                              output_dim=100,
+                                              input_length=self.max_seq_length-1),
+                    tf.keras.layers.Bidirectional(LSTM(150, return_sequences = True)),
+                    tf.keras.layers.Dropout(0.2),
+                    tf.keras.layers.LSTM(100),
+                    tf.keras.layers.Dense(self.vocabulary_size/2, 
+                                          activation='relu',
+                                          kernel_regularizer=regularizers.l2(0.01)),
+                    tf.keras.layers.Dense(self.vocabulary_size, activation='softmax')
+                ]
+            )
 
         # compile model
         self.model.compile(
@@ -216,8 +237,11 @@ class LSTMLyricGen:
         # tf.keras.utils.plot_model(self.model, show_shapes=True)
 
     def fitModel(self):
-        checkpoint_name = os.path.join(
+        if self.gloveFile:
+            checkpoint_name = os.path.join(
             f'{self.checkpointPath}/{self.gloveFile}')
+        else:
+            checkpoint_name = self.checkpointPath + '/no_glove'
         checkpoint_dir = os.path.dirname(checkpoint_name)
 
         # Create a callback that saves the model's weights
@@ -233,23 +257,18 @@ class LSTMLyricGen:
         sys.stdout = open(f'./lyric_outputs/{self.outputName}', 'w')
 
         if userInput == "":
-            randInt = int(
-                randrange(0, len(list(self.tokenizer.word_index.keys()))))
-            print(list(self.tokenizer.word_index.keys())[randInt])
+            randInt = int(randrange(0, len(list(self.tokenizer.word_index.keys()))))
+            print('Random seed word is :', list(self.tokenizer.word_index.keys())[randInt])
 
         for i in range(0, 30):
             output_line = ""
             for k in range(0, randrange(self.ave_line_len, self.max_line_len)):
 
-                encoded_text = self.tokenizer.texts_to_sequences([userInput])[
-                    0]
+                encoded_text = self.tokenizer.texts_to_sequences([userInput])[0]
 
-                encoded_text = pad_sequences(
-                    [encoded_text], maxlen=self.max_seq_length - 1, truncating="pre"
-                )
+                encoded_text = pad_sequences([encoded_text], maxlen=self.max_seq_length - 1, truncating="pre")
 
-                predicted = np.argmax(
-                    self.model.predict(encoded_text), axis=-1)
+                predicted = np.argmax(self.model.predict(encoded_text), axis=-1)
 
                 output_word = ""
                 for word, index in self.tokenizer.word_index.items():
