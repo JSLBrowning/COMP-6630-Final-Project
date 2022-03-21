@@ -1,8 +1,165 @@
 ARTIST: Enya
+TITLE: Only Time Lyrics
 LYRICS:
-[Instrumental]
-TITLE: Boadicea Lyrics
+Enya
+A Day Without Rain
+Only Time
+Who can say
+where the road goes
+where the day flows
+only time
+And who can say
+if your love grows
+as your heart chose
+only time
+Who can say
+why your heart sighs
+as your love flies
+only time
+And who can say
+why your heart cries
+when your love lies
+only time
+
+Who can say
+when the roads meet
+that love might be
+in your heart
+And who can say
+when the day sleeps
+if the night keeps
+all your heart
+
+Night keeps all your heart
+
+Who can say
+if your love grows
+as your heart chose
+only time
+And who can say
+where the road goes
+where the day flows
+only time
+
+Who knows - only time
+Who knows - only time
+/END LYRICS
+
+ARTIST: May
+TITLE: Sendiri Lyrics
+LYRICS:
+May
+Hakikat
+Sendiri
+Dinginnya di malam ini
+Suasana pilu 
+Terkenang daku kembali 
+Sejarah silam
+
+Setelah engkau pergi 
+Sepi hati ku
+Terpadamlah api cinta
+Musnah harapan
+
+Mengapa engkau sanggup
+Berubah fikiran
+Hanya kerana peristiwa itu
+Kau hancurkan kota cinta 
+Yang kita bina bersama
+Di masa yang lalu
+
+c/o
+Kini aku terus terseksa
+Oleh kepalsuan cinta mu
+Tinggallah aku sendiri
+Menanggung derita ini
+
+Setelah engkau pergi
+Tertutup hatiku
+Tak mungkin bercinta lagi
+Biarku sendiri
+/END LYRICS
+
+ARTIST: Enya
+TITLE: Watermark Lyrics
+LYRICS:
+Enya
+Miscellaneous
+Watermark
+Watermark (With Translation)
+Cursum Perficio
+
+ Cursum perficio.                I am making an end to my course.
+ Verbum sapienti:                A word to the wise:
+ quo plus habent,                the more [people] have
+ eo plus cupiunt.                the more they want.
+ Post nubila, Phoebus            After the clouds, Phoebus     (1)
+ Iternum                         Over and over again           (2)
+
+
+Phoebus was one of the names for the Sun god,
+which may be more famous as Apollo (Greek).
+It is notable that the Sun is a male.
+The word 'iternum' does not exist;
+it could either be a misspelling for 'eternum' (eternal),
+which is unlikely since it is very rare that an adjective
+be used as an adverb, or for 'iterum' (again and again)
+which is in fact an adverb and makes a little more sense (!!).
+The meaning of 'cursum perficio' is actually best explained
+by the footnote to the lyrics:
+Enya was inspired by these words she saw on Marylin Monroe's
+last house, where they were taken to mean "my journey ends here".
+It is a rather "free" translation, but it's probably a very good
+way to convey the meaning of Latin, which has a way of saying
+things that is very distant from modern-day English.
+The fact that those words turned out to be prophetical only
+adds to the power of the song.
+/END LYRICS
+
+ARTIST: Parachute
+TITLE: The Mess I Made Lyrics
+LYRICS:
+Should've kissed you there, I should've held your face
+I should've watched those eyes instead of run in place
+I should've called you out, I should've said your name
+I should've turned around, I should've looked again
+
+But oh I'm staring at the mess I made
+I'm staring at the mess I made
+I'm staring at the mess I made
+As you turn you take your heart and walk away
+
+Should've held my ground, I could've been redeemed
+For every second chance that changed its mind on me
+I should've spoken up, I should've proudly claimed
+That oh my head's to blame for all my heart's mistakes
+
+But oh I'm staring at the mess I made
+I'm staring at the mess I made
+I'm staring at the mess I made
+As you turn you take your heart and walk away
+
+And it's you, and it's you
+And it's you, and it's you
+And it's falling down as you walk away
+And it's on me now as you go
+
+But oh I'm staring at the mess I made
+I'm staring at the mess I made
+I'm staring at the mess I made
+As you turn you take your heart and walk away
+
+And it's falling down as you walk away
+And it's on me now as you go
+
+But oh I'm staring at the mess I made
+I'm staring at the mess I made
+I'm staring at the mess I made
+As you turn you take your heart and walk away
+/END LYRICS
+
 ARTIST: The Real McKenzies
+TITLE: Chip Lyrics
 LYRICS:
 Chip worked as a boatwright
 As his father and his gran
@@ -84,64 +241,41 @@ A lemon grows a pip
 A yard will build a ship
 As Satan is my master
 I'll get you Chip
-TITLE: Chip Lyrics
-ARTIST: May
+/END LYRICS
+
+ARTIST: Emancipator
+TITLE: First Snow Lyrics
 LYRICS:
-May
-Hakikat
-Sendiri
-Dinginnya di malam ini
-Suasana pilu 
-Terkenang daku kembali 
-Sejarah silam
+Everything that’s alive grows from a tiny seed.
+You know the little tomato seeds you and Nancy planted in your garden,
+And how they grew into nice, red tomatoes?
+Yeah
+"Laughter"
+Look Dad
 
-Setelah engkau pergi 
-Sepi hati ku
-Terpadamlah api cinta
-Musnah harapan
+Well like this.
 
-Mengapa engkau sanggup
-Berubah fikiran
-Hanya kerana peristiwa itu
-Kau hancurkan kota cinta 
-Yang kita bina bersama
-Di masa yang lalu
+Daddy?
 
-c/o
-Kini aku terus terseksa
-Oleh kepalsuan cinta mu
-Tinggallah aku sendiri
-Menanggung derita ini
+Remember how I told you the hen lays an egg?
 
-Setelah engkau pergi
-Tertutup hatiku
-Tak mungkin bercinta lagi
-Biarku sendiri
-TITLE: Sendiri Lyrics
-ARTIST: Enya
-LYRICS:
-May it be an evening star shines down upon you
-May it be when darkness falls your heart will be true
-You walk a lonely road
-Oh how far you are from home
+When the baby grows up to be an old man, and dies,
+They bury his body in the ground.
+But his soul goes to heaven.
 
-Mornie utulie
-Believe and you will find your way
-Mornie utulie
-A promise lives within you now
+Now look here
 
-May it be the shadow's call will fly away
-May it be you journey on to light their day
-When the night is overcome
-You may rise to find the sun
+Aww I'm bundled,
+I got on like two jackes on,
+Two pair of pants,
+About three socks,
+A hat,
+I need a mask too cause it's cold.
+Real cold.
+/END LYRICS
 
-Mornie utulie
-Believe and you will find your way
-Mornie utulie
-A promise lives within you now
-A promise lives within you now
-TITLE: May It Be Lyrics
 ARTIST: Parachute
+TITLE: She Is Love Lyrics
 LYRICS:
 I've been beaten down, I've been kicked around
 But she takes it all for me
@@ -162,8 +296,47 @@ They call her love, love, love, love, love
 She is love and she is all I need
 She is love and she is all I need
 She is love and she is all I need
-TITLE: She Is Love Lyrics
+/END LYRICS
+
+ARTIST: Goldfish
+TITLE: We Come Together Lyrics
+LYRICS:
+Hold on we brave the waves don’t fall
+When the sheriff’s got your back against the wall
+You’ll become a slave if you fear to brawl
+That’s why we crave to conquer all
+
+You can catch us switching lanes at the break of dawn
+When the rebel spirit answers to my call
+When the magic from within is released reborn
+That’s why we crave to conquer all
+
+O o when we come together
+No matter the weather
+We gonna love each other till the end of time WO O O
+Till the end of time WO O O
+
+Are you ready to face the eye of the storm
+When the planets are enraged can you stay calm
+Will you find your way when you’ve strayed to far
+Whether the distance is great or small
+
+I can show you the way if you gaze at the stars
+When the universe leaves all the gates ajar
+Whether I’ll be there is no question at all
+I could not escape the vortex to which we are drawn.
+
+O o when we come together
+No matter the weather
+We gonna love each other till the end of time WO O O
+Till the end of time WO O O
+
+We gonna rock the party automatic we gonna get naughty yeah
+We gonna rock it drop it till the morning there’ll be no stopping yeah
+/END LYRICS
+
 ARTIST: Mairi Campbell & Dave Francis
+TITLE: Auld Lang Syne Lyrics
 LYRICS:
 Should auld acquaintance be forgot
 And never brought to mind?
@@ -204,299 +377,16 @@ For auld lang syne, my dear
 For auld lang syne
 We'll tak' a cup o' kindness yet
 For auld lang syne
-TITLE: Auld Lang Syne Lyrics
-ARTIST: Jon Foreman
-LYRICS:
-Life is a gift like fresh cut roses
-Cut from the branch and brought inside
-It's a slow contradiction, it's beauty in a vase
-When our cords are cut that's when we start to die
+/END LYRICS
 
-Lately death and life get so confusing
-I can't tell the difference here tonight
-But lately every breath feels like I'm kissing death
-And when time is dead I cease to be alive
-
-If you hide yourself deep inside, deep inside
-In time you've got nothing left to hide, there's nothing left inside
-Tonight honey I'm gonna break your heart
-Mine was broken from the start, broken from the start
-
-Choice is the only thing we're given
-For one to live another dies
-One road says hello, the other says goodbye
-And the rose that you don't choose begin to die
-
-If you hide yourself deep inside, deep inside
-In time you've got nothing left to hide, it dries up inside
-Tonight honey I'm gonna break your heart
-Mine was broken from the start, broken from the start
-Broken from the start, broken from the start
-
-They won't pay a cent to hear you laughing
-They might pay a little to hear you cry
-If you do it long enough they might even pay attention
-But they still won't pay respect until you die, die
-
-If you hide yourself deep inside, deep inside
-In time you've got nothing left to hide, it's all dead inside
-Tonight honey I'm gonna break your heart
-Mine was broken from the start, broken from the start
-TITLE: Broken From The Start Lyrics
-ARTIST: Pogues
-LYRICS:
-Pogues
-If I Should Fall From Grace With God
-Fairytale Of New York
-It was Christmas Eve babe
-In the drunk tank
-An old man said to me, won't see another one
-And then he sang a song
-The Rare Old Mountain Dew
-And I turned my face away
-And dreamed about you
-
-Got on a lucky one
-Came in eighteen to one
-I've got a feeling
-This year's for me and you
-So happy Christmas
-I love you baby
-I can see a better time
-When all our dreams come true
-
-They've got cars
-Big as bars
-They've got rivers of gold
-But the wind goes right through you
-It's no place for the old
-
-When you first took my hand
-On a cold Christmas Eve
-You promised me
-Broadway was waiting for me
-
-You were handsome
-You were pretty
-Queen of New York City
-When the band finished playing
-They howled out for more
-Sinatra was swinging
-All the drunks they were singing
-We kissed on the corner
-Then danced through the night
-
-The boys of the NYPD choir
-Were singing 'Galway Bay'
-And the bells were ringing
-Out for Christmas day
-
-You're a bum
-You're a punk
-You're an old slut on junk
-Living there almost dead on a drip
-In that bed
-
-You scum bag
-You maggot
-You cheap lousy faggot
-Happy Christmas your arse
-I pray God
-It's our last
-
-I could have been someone
-So could anyone
-You took my dreams
-From me when I first found you
-I kept them with me babe
-I put them with my own
-Can't make it all alone
-I've built my dreams around you
-TITLE: Fairytale Of New York Lyrics
-ARTIST: Emancipator
-LYRICS:
-Everything that’s alive grows from a tiny seed.
-You know the little tomato seeds you and Nancy planted in your garden,
-And how they grew into nice, red tomatoes?
-Yeah
-"Laughter"
-Look Dad
-
-Well like this.
-
-Daddy?
-
-Remember how I told you the hen lays an egg?
-
-When the baby grows up to be an old man, and dies,
-They bury his body in the ground.
-But his soul goes to heaven.
-
-Now look here
-
-Aww I'm bundled,
-I got on like two jackes on,
-Two pair of pants,
-About three socks,
-A hat,
-I need a mask too cause it's cold.
-Real cold.
-TITLE: First Snow Lyrics
-ARTIST: Goldfish
-LYRICS:
-Hold on we brave the waves don’t fall
-When the sheriff’s got your back against the wall
-You’ll become a slave if you fear to brawl
-That’s why we crave to conquer all
-
-You can catch us switching lanes at the break of dawn
-When the rebel spirit answers to my call
-When the magic from within is released reborn
-That’s why we crave to conquer all
-
-O o when we come together
-No matter the weather
-We gonna love each other till the end of time WO O O
-Till the end of time WO O O
-
-Are you ready to face the eye of the storm
-When the planets are enraged can you stay calm
-Will you find your way when you’ve strayed to far
-Whether the distance is great or small
-
-I can show you the way if you gaze at the stars
-When the universe leaves all the gates ajar
-Whether I’ll be there is no question at all
-I could not escape the vortex to which we are drawn.
-
-O o when we come together
-No matter the weather
-We gonna love each other till the end of time WO O O
-Till the end of time WO O O
-
-We gonna rock the party automatic we gonna get naughty yeah
-We gonna rock it drop it till the morning there’ll be no stopping yeah
-TITLE: We Come Together Lyrics
-ARTIST: The Real McKenzies
-LYRICS:
-Like a squid, up at dawn
-An' I drag me butt tae me job.
-Not a break, front to back
-Kicking balls to the wall
-Down a mile a hole
-Moving mountains of coal
-While here's to hell
-It's ringing my bell
-Sing a song, bang a gong
-And tonight would be good to be bad.
-
-So I take a wee dram
-Just to take off the edge
-Whether diggin' a ditch
-Or swinging a sledge
-I drink to ignore high society's crap.
-Bot'tla' whiskey in me
-And I ain't even whacked
-Now I know how it feels for the rat
-On the wheel to run for the cheese.
-
-We drink and we drink and we drink some more
-The only thing better than drinking for me
-Is when I'm drinking with you
-and we're drinking for free.
-
-I feel drunk and tight
-Just a wee bit tipsy tonight
-It's the best that I've had
-But I've puked on my kilt
-Will you call me a cab
-Will you call me a cab
-For now I must go
-To wake up at dawn
-For a heave and a hoe
-And tonight was good to be bad
-TITLE: Drink Some More Lyrics
-ARTIST: The Pogues
-LYRICS:
-Of all the money that e'er I spent
-I've spent it in good company
-And all the harm that ever I did
-Alas, it was to none but me
-
-And all I've done for want of wit
-To memory now I can't recall
-So fill to me the parting glass
-Good night and joy be with you all
-
-If I had money enough to spend
-And leisure to sit awhile
-There is a fair maid in the town
-That sorely has my heart beguiled
-
-Her rosy cheeks and ruby lips
-I own she has my heart enthralled
-So fill to me the parting glass
-Good night and joy be with you all
-
-Oh, all the comrades that e'er I had
-They're sorry for my going away
-And all the sweethearts that e'er I had
-They'd wish me one more day to stay
-
-But since it falls unto my lot
-That I should rise and you should not
-I'll gently rise and softly call
-Good night and joy be with you all
-TITLE: The Parting Glass Lyrics
 ARTIST: Enya
+TITLE: Boadicea Lyrics
 LYRICS:
-Let me sail, let me sail, let the Orinoco flow
-Let me reach, let me beach on the shores of Tripoli
-Let me sail, let me sail, let me crash upon your shore
-Let me reach, let me beach far beyond the Yellow Sea
+[Instrumental]
+/END LYRICS
 
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-
-From Bissau to Palau in the shade of Avalon
-From Fiji to Tiree and the isles of Ebony
-From Peru to Cebu, feel the power of Babylon
-From Bali to Cali, far beneath the Coral Sea
-
-Turn it up, turn it up, turn it up [Incomprehensible]
-Turn it up, turn it up, turn it up [Incomprehensible]
-Turn it up, turn it up, turn it up [Incomprehensible]
-
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-
-From the North to the South, Ebudau unto Khartoum
-From the deep sea of clouds to the island of the Moon
-Carry me on the waves to the land I've never been
-Carry me on the waves to the land I've never seen
-
-We can sail, we can sail with the Orinoco flow
-We can sail, we can sail
-Sail away, sail away, sail away
-
-We can steer, we can near with Rob Dickins at the wheel
-We can sigh, say goodbye, Ross and his dependencies
-
-We can sail, we can sail
-Sail away, sail away, sail away
-We can sail, we can sail
-Sail away, sail away, sail away
-
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-Sail away, sail away, sail away
-TITLE: Enya : Orinoco Flow Lyrics
 ARTIST: Enya
+TITLE: One By One Lyrics
 LYRICS:
 Here am I
 yet another goodbye!
@@ -532,87 +422,44 @@ there's a love that won't die?
 
 - don't say adieu, says adios, goodbye
 - don't say adieu, says adios, goodbye
-TITLE: One By One Lyrics
-ARTIST: Enya
+/END LYRICS
+
+ARTIST: The Pogues
+TITLE: The Parting Glass Lyrics
 LYRICS:
-Enya
-A Day Without Rain
-Only Time
-Who can say
-where the road goes
-where the day flows
-only time
-And who can say
-if your love grows
-as your heart chose
-only time
-Who can say
-why your heart sighs
-as your love flies
-only time
-And who can say
-why your heart cries
-when your love lies
-only time
+Of all the money that e'er I spent
+I've spent it in good company
+And all the harm that ever I did
+Alas, it was to none but me
 
-Who can say
-when the roads meet
-that love might be
-in your heart
-And who can say
-when the day sleeps
-if the night keeps
-all your heart
+And all I've done for want of wit
+To memory now I can't recall
+So fill to me the parting glass
+Good night and joy be with you all
 
-Night keeps all your heart
+If I had money enough to spend
+And leisure to sit awhile
+There is a fair maid in the town
+That sorely has my heart beguiled
 
-Who can say
-if your love grows
-as your heart chose
-only time
-And who can say
-where the road goes
-where the day flows
-only time
+Her rosy cheeks and ruby lips
+I own she has my heart enthralled
+So fill to me the parting glass
+Good night and joy be with you all
 
-Who knows - only time
-Who knows - only time
-TITLE: Only Time Lyrics
-ARTIST: Enya
-LYRICS:
-Enya
-Miscellaneous
-Watermark
-Watermark (With Translation)
-Cursum Perficio
+Oh, all the comrades that e'er I had
+They're sorry for my going away
+And all the sweethearts that e'er I had
+They'd wish me one more day to stay
 
- Cursum perficio.                I am making an end to my course.
- Verbum sapienti:                A word to the wise:
- quo plus habent,                the more [people] have
- eo plus cupiunt.                the more they want.
- Post nubila, Phoebus            After the clouds, Phoebus     (1)
- Iternum                         Over and over again           (2)
+But since it falls unto my lot
+That I should rise and you should not
+I'll gently rise and softly call
+Good night and joy be with you all
+/END LYRICS
 
-
-Phoebus was one of the names for the Sun god,
-which may be more famous as Apollo (Greek).
-It is notable that the Sun is a male.
-The word 'iternum' does not exist;
-it could either be a misspelling for 'eternum' (eternal),
-which is unlikely since it is very rare that an adjective
-be used as an adverb, or for 'iterum' (again and again)
-which is in fact an adverb and makes a little more sense (!!).
-The meaning of 'cursum perficio' is actually best explained
-by the footnote to the lyrics:
-Enya was inspired by these words she saw on Marylin Monroe's
-last house, where they were taken to mean "my journey ends here".
-It is a rather "free" translation, but it's probably a very good
-way to convey the meaning of Latin, which has a way of saying
-things that is very distant from modern-day English.
-The fact that those words turned out to be prophetical only
-adds to the power of the song.
-TITLE: Watermark Lyrics
 ARTIST: Fran Perea
+TITLE: Uno mas uno son siete Lyrics
 LYRICS:
 Fran Perea
 Miscellaneous
@@ -672,8 +519,124 @@ SER FELIZ
 
 
 by sadic0 & upload by ISS
-TITLE: Uno mas uno son siete Lyrics
+/END LYRICS
+
+ARTIST: Celtic Woman
+TITLE: Pie Jesu Lyrics
+LYRICS:
+[** Latin / English:]
+
+Pie Jesu / Lord, have mercy
+Pie Jesu / Lord, have mercy
+Pie Jesu / Lord, have mercy
+Pie Jesu / Lord, have mercy
+Qui tollis peccata mundi/ You who take away the sins of the world
+Dona eis requiem/ Grant them peace 
+Dona eis requiem/ Grant them peace 
+
+Pie Jesu / Lord, have mercy
+Pie Jesu / Lord, have mercy
+Pie Jesu / Lord, have mercy
+Pie Jesu / Lord, have mercy
+Qui tollis peccata mundi/ You who take away the sins of the world
+Dona eis requiem/ Grant them peace 
+Dona eis requiem/ Grant them peace 
+
+Agnus Dei/ Lamb of God
+Agnus Dei/ Lamb of God
+Agnus Dei/ Lamb of God
+Agnus Dei/ Lamb of God
+Qui tollis peccata mundi/ You who take away the sins of the world
+Dona eis requiem/ Grant them peace 
+Dona eis requiem/ Grant them peace 
+Sempiternam / Everlasting, 
+Sempiternam / everlasting 
+Requiem / peace
+/END LYRICS
+
+ARTIST: The Real McKenzies
+TITLE: Drink Some More Lyrics
+LYRICS:
+Like a squid, up at dawn
+An' I drag me butt tae me job.
+Not a break, front to back
+Kicking balls to the wall
+Down a mile a hole
+Moving mountains of coal
+While here's to hell
+It's ringing my bell
+Sing a song, bang a gong
+And tonight would be good to be bad.
+
+So I take a wee dram
+Just to take off the edge
+Whether diggin' a ditch
+Or swinging a sledge
+I drink to ignore high society's crap.
+Bot'tla' whiskey in me
+And I ain't even whacked
+Now I know how it feels for the rat
+On the wheel to run for the cheese.
+
+We drink and we drink and we drink some more
+The only thing better than drinking for me
+Is when I'm drinking with you
+and we're drinking for free.
+
+I feel drunk and tight
+Just a wee bit tipsy tonight
+It's the best that I've had
+But I've puked on my kilt
+Will you call me a cab
+Will you call me a cab
+For now I must go
+To wake up at dawn
+For a heave and a hoe
+And tonight was good to be bad
+/END LYRICS
+
+ARTIST: Jon Foreman
+TITLE: Broken From The Start Lyrics
+LYRICS:
+Life is a gift like fresh cut roses
+Cut from the branch and brought inside
+It's a slow contradiction, it's beauty in a vase
+When our cords are cut that's when we start to die
+
+Lately death and life get so confusing
+I can't tell the difference here tonight
+But lately every breath feels like I'm kissing death
+And when time is dead I cease to be alive
+
+If you hide yourself deep inside, deep inside
+In time you've got nothing left to hide, there's nothing left inside
+Tonight honey I'm gonna break your heart
+Mine was broken from the start, broken from the start
+
+Choice is the only thing we're given
+For one to live another dies
+One road says hello, the other says goodbye
+And the rose that you don't choose begin to die
+
+If you hide yourself deep inside, deep inside
+In time you've got nothing left to hide, it dries up inside
+Tonight honey I'm gonna break your heart
+Mine was broken from the start, broken from the start
+Broken from the start, broken from the start
+
+They won't pay a cent to hear you laughing
+They might pay a little to hear you cry
+If you do it long enough they might even pay attention
+But they still won't pay respect until you die, die
+
+If you hide yourself deep inside, deep inside
+In time you've got nothing left to hide, it's all dead inside
+Tonight honey I'm gonna break your heart
+Mine was broken from the start, broken from the start
+/END LYRICS
+
 ARTIST: Enya
+TITLE: Wild Child Lyrics
 LYRICS:
 Enya
 A Day Without Rain
@@ -755,76 +718,152 @@ what a day to take to
 a wild child
 what a day
 what a day to take to
-TITLE: Wild Child Lyrics
-ARTIST: Celtic Woman
-LYRICS:
-[** Latin / English:]
-
-Pie Jesu / Lord, have mercy
-Pie Jesu / Lord, have mercy
-Pie Jesu / Lord, have mercy
-Pie Jesu / Lord, have mercy
-Qui tollis peccata mundi/ You who take away the sins of the world
-Dona eis requiem/ Grant them peace 
-Dona eis requiem/ Grant them peace 
-
-Pie Jesu / Lord, have mercy
-Pie Jesu / Lord, have mercy
-Pie Jesu / Lord, have mercy
-Pie Jesu / Lord, have mercy
-Qui tollis peccata mundi/ You who take away the sins of the world
-Dona eis requiem/ Grant them peace 
-Dona eis requiem/ Grant them peace 
-
-Agnus Dei/ Lamb of God
-Agnus Dei/ Lamb of God
-Agnus Dei/ Lamb of God
-Agnus Dei/ Lamb of God
-Qui tollis peccata mundi/ You who take away the sins of the world
-Dona eis requiem/ Grant them peace 
-Dona eis requiem/ Grant them peace 
-Sempiternam / Everlasting, 
-Sempiternam / everlasting 
-Requiem / peace
-TITLE: Pie Jesu Lyrics
-ARTIST: Parachute
-LYRICS:
-Should've kissed you there, I should've held your face
-I should've watched those eyes instead of run in place
-I should've called you out, I should've said your name
-I should've turned around, I should've looked again
-
-But oh I'm staring at the mess I made
-I'm staring at the mess I made
-I'm staring at the mess I made
-As you turn you take your heart and walk away
-
-Should've held my ground, I could've been redeemed
-For every second chance that changed its mind on me
-I should've spoken up, I should've proudly claimed
-That oh my head's to blame for all my heart's mistakes
-
-But oh I'm staring at the mess I made
-I'm staring at the mess I made
-I'm staring at the mess I made
-As you turn you take your heart and walk away
-
-And it's you, and it's you
-And it's you, and it's you
-And it's falling down as you walk away
-And it's on me now as you go
-
-But oh I'm staring at the mess I made
-I'm staring at the mess I made
-I'm staring at the mess I made
-As you turn you take your heart and walk away
-
-And it's falling down as you walk away
-And it's on me now as you go
-
-But oh I'm staring at the mess I made
-I'm staring at the mess I made
-I'm staring at the mess I made
-As you turn you take your heart and walk away
-TITLE: The Mess I Made Lyrics
 /END LYRICS
+
+ARTIST: Pogues
+TITLE: Fairytale Of New York Lyrics
+LYRICS:
+Pogues
+If I Should Fall From Grace With God
+Fairytale Of New York
+It was Christmas Eve babe
+In the drunk tank
+An old man said to me, won't see another one
+And then he sang a song
+The Rare Old Mountain Dew
+And I turned my face away
+And dreamed about you
+
+Got on a lucky one
+Came in eighteen to one
+I've got a feeling
+This year's for me and you
+So happy Christmas
+I love you baby
+I can see a better time
+When all our dreams come true
+
+They've got cars
+Big as bars
+They've got rivers of gold
+But the wind goes right through you
+It's no place for the old
+
+When you first took my hand
+On a cold Christmas Eve
+You promised me
+Broadway was waiting for me
+
+You were handsome
+You were pretty
+Queen of New York City
+When the band finished playing
+They howled out for more
+Sinatra was swinging
+All the drunks they were singing
+We kissed on the corner
+Then danced through the night
+
+The boys of the NYPD choir
+Were singing 'Galway Bay'
+And the bells were ringing
+Out for Christmas day
+
+You're a bum
+You're a punk
+You're an old slut on junk
+Living there almost dead on a drip
+In that bed
+
+You scum bag
+You maggot
+You cheap lousy faggot
+Happy Christmas your arse
+I pray God
+It's our last
+
+I could have been someone
+So could anyone
+You took my dreams
+From me when I first found you
+I kept them with me babe
+I put them with my own
+Can't make it all alone
+I've built my dreams around you
+/END LYRICS
+
+ARTIST: Enya
+TITLE: Enya : Orinoco Flow Lyrics
+LYRICS:
+Let me sail, let me sail, let the Orinoco flow
+Let me reach, let me beach on the shores of Tripoli
+Let me sail, let me sail, let me crash upon your shore
+Let me reach, let me beach far beyond the Yellow Sea
+
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+
+From Bissau to Palau in the shade of Avalon
+From Fiji to Tiree and the isles of Ebony
+From Peru to Cebu, feel the power of Babylon
+From Bali to Cali, far beneath the Coral Sea
+
+Turn it up, turn it up, turn it up [Incomprehensible]
+Turn it up, turn it up, turn it up [Incomprehensible]
+Turn it up, turn it up, turn it up [Incomprehensible]
+
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+
+From the North to the South, Ebudau unto Khartoum
+From the deep sea of clouds to the island of the Moon
+Carry me on the waves to the land I've never been
+Carry me on the waves to the land I've never seen
+
+We can sail, we can sail with the Orinoco flow
+We can sail, we can sail
+Sail away, sail away, sail away
+
+We can steer, we can near with Rob Dickins at the wheel
+We can sigh, say goodbye, Ross and his dependencies
+
+We can sail, we can sail
+Sail away, sail away, sail away
+We can sail, we can sail
+Sail away, sail away, sail away
+
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+Sail away, sail away, sail away
+/END LYRICS
+
+ARTIST: Enya
+TITLE: May It Be Lyrics
+LYRICS:
+May it be an evening star shines down upon you
+May it be when darkness falls your heart will be true
+You walk a lonely road
+Oh how far you are from home
+
+Mornie utulie
+Believe and you will find your way
+Mornie utulie
+A promise lives within you now
+
+May it be the shadow's call will fly away
+May it be you journey on to light their day
+When the night is overcome
+You may rise to find the sun
+
+Mornie utulie
+Believe and you will find your way
+Mornie utulie
+A promise lives within you now
+A promise lives within you now
+/END LYRICS
+

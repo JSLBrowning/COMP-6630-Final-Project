@@ -1,120 +1,37 @@
-ARTIST: We Are Trees
+ARTIST: James Yuill
+TITLE: This Sweet Love Lyrics
 LYRICS:
-I don't believe in, I don't believe in love*
-Say what you want to, say want to me, 
-Why does it happen? Why does it happen only to me,
+Be the greatest man in history
+The greatest man that you can be
+Just be
 
-It starts with a kiss but ends with a bitch,
-I don't know why I put myself in all of this,
-I just want to say goodbye,
-When you came into, when you came into my Life,
-I wanted you to be, I wanted you to be my wife,
-I couldn't life with, I couldn't live without you,
+Walk, walk out on the beach with me
+Walk out in the sea with me
+Just be
 
-You said that you cared, and I really knew that you'd be the one,
-I gave you my heart, but look what you did,
-Oh what have I done, 
+All of the time you show me your love
+Sweet love
+And oh, how you know
+This sweet love
 
-It starts with a kiss, but ends with a bitch,
-I don't know why I put myself through all of this,
-I just want to say goodbye,
-To love
+Nights, cold nights wrapped in ecstasy
+Those times still perplexing be
+They just be
 
-I don't believe in, I don't believe in,
-I don't believe in, I don't believe in,
+All of the time you show me your love
+Sweet love
+And oh, how you know
+This sweet love
 
-I don't believe in, I don't believe in,
-I don't believe in, I don't believe in,
+All of the time you show me your love
+Sweet love
+And oh, how you know
+This sweet love, this sweet love
+This sweet love, this sweet love
+/END LYRICS
 
-I don't believe in, I don't believe in,
-I don't believe in, I don't believe in,
-
-I don't believe in, I don't believe in,
-I don't believe in, I don't believe in,
-
-Love
-TITLE: I Don't Believe In Love Lyrics
-ARTIST: Mojave
-LYRICS:
-Mojave
-Love Songs On The Radio
-Love Songs On The Radio
-She looks just like an angel
-When she walks across the room
-She shines tonight
-Her golden light
-Is everything I need
-
-Lovers all around her
-She wears them like her jewels
-My friend says she's all he needs
-To feel alive
-
-Love songs on the radio
-His sweetheart lies in bed
-She's dreaming of the things he said
-She's hoping that he's well
-
-
-
-
-..as you disagree, disagree w/ [email protected]
-TITLE: Love Songs On The Radio Lyrics
-ARTIST: We Are Trees
-LYRICS:
-I never knew how long this would take. I think I’ll lie down. 
-You never wanted to be with me, Oh I cry. 
-
-You were always the quiet one. Please speak up for us. 
-I want to hear what you have to say. It's that time of year. 
-
-Why do we even pretend? I don’t want to be your friend, anymore. 
-Ever since that single day, you kicked me out the front door and I walked away. 
-
-You say that you want me to go. 
-And I wonder what you’ve become. 
-You say that you want me to go.
-And I wonder what you’ve become.
-TITLE: Teenage Heartbreak Lyrics
-ARTIST: Kim Chiu
-LYRICS:
-May ibang sumusuyo
-Sa puso kong para sayo
-Aaminin ko may ibang tibok
-Ang puso kong lito
-
-Sana ay malaman mo
-Ikaw pa rin ang hanap ko
-Ngunit isang ngiti nya lang
-Nahuhulog ang puso kong lito
-
-CHORUS:
-
-Pero mahal na mahal kita
-At mahal na mahal ko siya
-Hindi ko alam ano ang gagawin
-Bakit ang puso kong ito
-Hirap at litong-lito
-Sana naman sana naman sana naman
-Maramdaman mo
-
-Alam mong mahal kita
-Sana maniwala ka
-Kahit may ibang hinahanap
-Ang puso kong lito
-
-Kung matuturuan lang
-Angpuso kong lito
-'Di na sana nag ka ganito
-Umiibig sa isang katulad niya
-
-(REPEAT CHORUS x2)
-TITLE: Pusong Lito Lyrics
-ARTIST: Rodrigo Y Gabriela
-LYRICS:
-(instrumental)
-TITLE: Tamacun Lyrics
 ARTIST: Priscilla Ahn
+TITLE: Dream Lyrics
 LYRICS:
 Priscilla Ahn
 A Good Day
@@ -137,8 +54,10 @@ Now I'm old and feeling grey. I don't know what's left to say about this life I'
 I lived it full and I lived it well, there's many tales I've lived to tell. I'm ready now, I'm ready now, I'm ready now to fly from the highest wing.
 
 I had a dream
-TITLE: Dream Lyrics
+/END LYRICS
+
 ARTIST: John Denver & Placido Domingo
+TITLE: Perhaps Love Lyrics
 LYRICS:
 Perhaps love is like a resting place
 A shelter from the storm
@@ -185,8 +104,310 @@ Or thunder when it rains
 If I should live forever
 And all my dreams come true
 My memories of love will be of you
-TITLE: Perhaps Love Lyrics
+/END LYRICS
+
+ARTIST: Sophie Hunger
+TITLE: Le Vent Nous Portera Lyrics
+LYRICS:
+Je n'ai pas peur de la route
+Faudrait voir, faut qu'on y goûte
+Des méandres au creux des reins
+Et tout ira bien là
+Le vent nous portera
+
+Ton message à la Grande Ourse
+Et la trajectoire de la course
+Un instantané de velours
+Même s'il ne sert à rien va
+Le vent l'emportera
+Tout disparaîtra mais
+Le vent nous portera
+
+La caresse et la mitraille
+Et cette plaie qui nous tiraille
+Le palais des autres jours
+D'hier et demain
+Le vent les portera
+
+Génetique en bandouillère
+Des chromosomes dans l'atmosphère
+Des taxis pour les galaxies
+Et mon tapis volant dis ?
+Le vent l'emportera
+Tout disparaîtra mais
+Le vent nous portera
+
+Ce parfum de nos années mortes
+Ce qui peut frapper à ta porte
+Infinité de destins
+On en pose un et qu'est-ce qu'on en retient?
+Le vent l'emportera
+
+Pendant que la marée monte
+Et que chacun refait ses comptes
+J'emmène au creux de mon ombre
+Des poussières de toi
+Le vent les portera
+Tout disparaîtra mais
+Le vent nous portera
+/END LYRICS
+
+ARTIST: Matt Corby
+TITLE: Refuge (Acoustic) Lyrics
+LYRICS:
+Fear lives, in these bones
+I am helpless on, I'm so helpless on 
+my own
+
+We started giving in, our walls our wearing thin
+Our light is growing dim, we are
+So far from where we want to be
+There's nothing for me here
+So grab your coat, let's leave this place my dear
+
+The colours of my soul are seeking refuge
+In somebody elses arms
+Now I must try, to win them back somehow
+I've fallen hard and fallen short
+But love is not a winners game at all
+
+Now I must try to forget about it now
+
+Fear lives, in these bones
+I am, helpless on 
+I'm so helpless on my own
+
+And will time get the better of me,
+we'll have to wait and see,
+for now I'll keep floating down this dark abyss, of lonliness
+
+But before I leave, just one last kiss now
+
+The colours of my soul are seeking refuge
+In somebody elses arms,
+Now i must try to win them back somehow
+
+I've fallen hard, and fallen short 
+but love is not a winners game at all
+now I must try to forget about it now
+
+The colours of my soul are seeking refuge 
+in somebody elses arms
+now i must try to win them back somehow
+/END LYRICS
+
 ARTIST: We Are Trees
+TITLE: You Lyrics
+LYRICS:
+You have nothing left to say
+Are we truly at the end
+How am I supposed to try 
+To pretend everything is alright
+/END LYRICS
+
+ARTIST: We Are Trees
+TITLE: I Don't Believe In Love Lyrics
+LYRICS:
+I don't believe in, I don't believe in love*
+Say what you want to, say want to me, 
+Why does it happen? Why does it happen only to me,
+
+It starts with a kiss but ends with a bitch,
+I don't know why I put myself in all of this,
+I just want to say goodbye,
+When you came into, when you came into my Life,
+I wanted you to be, I wanted you to be my wife,
+I couldn't life with, I couldn't live without you,
+
+You said that you cared, and I really knew that you'd be the one,
+I gave you my heart, but look what you did,
+Oh what have I done, 
+
+It starts with a kiss, but ends with a bitch,
+I don't know why I put myself through all of this,
+I just want to say goodbye,
+To love
+
+I don't believe in, I don't believe in,
+I don't believe in, I don't believe in,
+
+I don't believe in, I don't believe in,
+I don't believe in, I don't believe in,
+
+I don't believe in, I don't believe in,
+I don't believe in, I don't believe in,
+
+I don't believe in, I don't believe in,
+I don't believe in, I don't believe in,
+
+Love
+/END LYRICS
+
+ARTIST: Rodrigo Y Gabriela
+TITLE: Hanuman Lyrics
+LYRICS:
+(instrumental)
+/END LYRICS
+
+ARTIST: We Are Trees
+TITLE: Teenage Heartbreak Lyrics
+LYRICS:
+I never knew how long this would take. I think I’ll lie down. 
+You never wanted to be with me, Oh I cry. 
+
+You were always the quiet one. Please speak up for us. 
+I want to hear what you have to say. It's that time of year. 
+
+Why do we even pretend? I don’t want to be your friend, anymore. 
+Ever since that single day, you kicked me out the front door and I walked away. 
+
+You say that you want me to go. 
+And I wonder what you’ve become. 
+You say that you want me to go.
+And I wonder what you’ve become.
+/END LYRICS
+
+ARTIST: Mojave
+TITLE: Love Songs On The Radio Lyrics
+LYRICS:
+Mojave
+Love Songs On The Radio
+Love Songs On The Radio
+She looks just like an angel
+When she walks across the room
+She shines tonight
+Her golden light
+Is everything I need
+
+Lovers all around her
+She wears them like her jewels
+My friend says she's all he needs
+To feel alive
+
+Love songs on the radio
+His sweetheart lies in bed
+She's dreaming of the things he said
+She's hoping that he's well
+
+
+
+
+..as you disagree, disagree w/ [email protected]
+/END LYRICS
+
+ARTIST: Kina Grannis
+TITLE: Valentine Lyrics
+LYRICS:
+Love, it's a special day*
+We should celebrate and appreciate
+That you and me found something pretty neat
+And I know some say this day is arbitrary
+
+But it's a good excuse
+Put our love to use
+Baby, I know what to do
+Baby, I will love you
+I'll love you
+I'll love you
+
+Love, I don't need those things
+I don't need no ring, I don't need anything
+But you with me, 'cause in your company
+I feel happy, oh so happy, and complete
+
+And it's a good excuse
+Put our love to use
+Baby, I know what to do
+Baby, I will love you
+I'll love you
+I'll love you
+
+So won't you be my honeybee
+Giving me kisses all the time
+Be mine, be my valentine
+
+So won't you be my honeybee
+Giving sweet kisses all the time
+Be mine, be my valentine
+Be my valentine
+/END LYRICS
+
+ARTIST: Matt Corby
+TITLE: Untitled (Into the Flame) Lyrics
+LYRICS:
+So I threw your letter into the flame
+And watched the fire regain
+And these words have done nothing for you
+As I did not read them through
+Now turned to ash in the flue
+
+And colors are dull
+As the feeling of the cold
+And memories fall
+As the fire is getting old
+Oh and I once more am now
+
+Don’t you fret I’ll find my way
+Carefully walking from the devil’s plane
+And I know why you did not follow me
+Pride swallowed me then led me astray
+
+And now the dark in me has now seen the day
+Oh my chill has now lost its way
+And these hands that once had helped me to pray
+They are limp in all their dismay
+Oh they fall in their disarray
+
+And colors are dull
+As the feeling of the cold
+And memories fall
+As the fire is getting old
+Oh and I once more am now
+
+Oh don’t you fret I’ll find my way
+Carefully walking from the devil’s plane
+And I know why you did not follow me
+Pride swallowed me then led me astray
+/END LYRICS
+
+ARTIST: Kim Chiu
+TITLE: Pusong Lito Lyrics
+LYRICS:
+May ibang sumusuyo
+Sa puso kong para sayo
+Aaminin ko may ibang tibok
+Ang puso kong lito
+
+Sana ay malaman mo
+Ikaw pa rin ang hanap ko
+Ngunit isang ngiti nya lang
+Nahuhulog ang puso kong lito
+
+CHORUS:
+
+Pero mahal na mahal kita
+At mahal na mahal ko siya
+Hindi ko alam ano ang gagawin
+Bakit ang puso kong ito
+Hirap at litong-lito
+Sana naman sana naman sana naman
+Maramdaman mo
+
+Alam mong mahal kita
+Sana maniwala ka
+Kahit may ibang hinahanap
+Ang puso kong lito
+
+Kung matuturuan lang
+Angpuso kong lito
+'Di na sana nag ka ganito
+Umiibig sa isang katulad niya
+
+(REPEAT CHORUS x2)
+/END LYRICS
+
+ARTIST: We Are Trees
+TITLE: Girlfriend Lyrics
 LYRICS:
 Talk to me, girl
 I never wanted to end this way with you (x4)
@@ -195,8 +416,154 @@ I know you won't believe me
 Everything I do deceives you (x4)
 
 Ooh (x4)
-TITLE: Girlfriend Lyrics
+/END LYRICS
+
+ARTIST: Xavior Rudd
+TITLE: Sky To Ground Lyrics
+LYRICS:
+I've seen babies begging, scratching round for food to eat
+I've seen a big old tree still standing tall, two thousand years healthy
+I've seen the oldest woman shaking her head at what went wrong
+I drank water from a stream so fresh you could't see the water at all. 
+at all.
+
+I've seen streets so dirty, there is hardly a place to walk and
+I've fallen asleep to our bush birds, singing the prettiest song
+I've seen all of the pain and all the murder on tv and 
+I've stood free on soild waves, mother earths greatest treats
+
+Oh peace on earth that i know
+Sending us out to war my friend 
+this place my home from sky to ground
+see the universe conneted from the inside  
+
+I've seen people screaming at the car that cut them off
+and ive felt the cleanest mountian air cleaning out my nose
+I've seen fast food chains nearly every place that i go 
+Ive had a belly full of the freshest fish speared with a single throw
+
+and i sing 
+Oh peace on earth that i know
+Sending us out to war my friend 
+this place my home from sky to ground
+see the universe conneted from the inside  
+
+there's been changes in weather like never before
+changing the winter and summer and spring
+many many people still listening to the earth and her song
+so is sing it strong
+
+Oh peace on earth that i know
+Sending us out to war my friend 
+this place my home from sky to ground
+see the universe conneted from the inside 
+
+in theses times of trouble in these times of war
+in theses times when our planet is it getting to warm
+it makes me simle to take a look around
+of this earth and this earth we can be so proud
+/END LYRICS
+
+ARTIST: Uniform Motion
+TITLE: Fools, Don't Listen To A Word I Say Lyrics
+LYRICS:
+Salutary tongues that speak in turn. Waiting for their chance to make us yearn.
+The sounds and emotions spreading thin, we’ll sink the float that would not let us win.
+A solitary cheer that does not work. We cottoned on to all their taints and quirks.
+And fled to the mountains on a whim, watching all the mess behind us sink.
+And that’s no way to listen to our sonnet.
+They’re buzzing like a bee inside my bonnet.
+But the fools never listen to what I say.
+They’ve copied all their lines into a prayer.
+
+Fools, don’t listen to a word I say. Just look the other way.
+I’m not saying I’ve got much to say. Just look the other way.
+/END LYRICS
+
+ARTIST: Rodrigo Y Gabriela
+TITLE: Tamacun Lyrics
+LYRICS:
+(instrumental)
+/END LYRICS
+
+ARTIST: David Berkeley
+TITLE: Shenandoah Lyrics
+LYRICS:
+Oh Shenandoah, I long to hear you*
+Away you rolling river.
+Oh Shenandoah, I long to hear you.
+Away, I'm going away,
+Cross the wide Missouri.
+
+‘Tis seven long years since I last saw you.
+Away you rolling river.
+‘Tis seven long years since I last saw you.
+Away I'm going away,
+Cross the wide Missouri.
+
+Oh Shenandoah, I love your daughter.
+Away you rolling river.
+Oh Shenandoah, I love your daughter.
+Away, I'm going way,
+Cross the wide Missouri.
+
+Oh Shenandoah, I long to hear you.
+Away you rolling river.
+Oh Shenandoah, I long to hear you.
+Away, I'm going away,
+Cross the wide Missouri.
+
+Oh Shenandoah, I'll never leave you.
+Away you rolling river.
+Oh Shenandoah, don't want to leave you.
+Away, I'm going away,
+Cross the wide Missouri.
+/END LYRICS
+
+ARTIST: Jamestown Story
+TITLE: I'll See You Someday Lyrics
+LYRICS:
+I had a friend that went home to god
+At least thats what im hoping
+But thats how life goes 
+Like it or not
+You couldnt know how I felt 
+When you went away
+And now I know my life 
+Will never be the same
+(be the same x2)
+It will never be the same without you
+i dont want
+This to be the end
+I dont want
+To have to say goodbye
+I dont want 
+This to be over
+but this is not over
+Ill see you someday down
+At the end of lifes road youll be there
+With your arms wide open
+But until then I guess this is goodbye
+You were the one that kept me in line
+When I got to crazy
+Now that youre gone
+Im doing just fine
+But it seems lately that I
+Cry myself to sleep
+Cuz I know that you
+Will never be with me
+I dont want
+This to be the end
+I dont want
+To have to say goodbye
+I dont want 
+This to be over
+but this is not over
+Ill see you someday down
+/END LYRICS
+
 ARTIST: Remi Nicole
+TITLE: Cupid Shoot Me Lyrics
 LYRICS:
 I'm sure you'd agree,
 It ain't you it's me,
@@ -242,333 +609,5 @@ I don't know how to care for him,
 Cupid shoot me with your bow,
 So I know, how to love him so,
 Oh Oh Oh
-TITLE: Cupid Shoot Me Lyrics
-ARTIST: Jamestown Story
-LYRICS:
-I had a friend that went home to god
-At least thats what im hoping
-But thats how life goes 
-Like it or not
-You couldnt know how I felt 
-When you went away
-And now I know my life 
-Will never be the same
-(be the same x2)
-It will never be the same without you
-i dont want
-This to be the end
-I dont want
-To have to say goodbye
-I dont want 
-This to be over
-but this is not over
-Ill see you someday down
-At the end of lifes road youll be there
-With your arms wide open
-But until then I guess this is goodbye
-You were the one that kept me in line
-When I got to crazy
-Now that youre gone
-Im doing just fine
-But it seems lately that I
-Cry myself to sleep
-Cuz I know that you
-Will never be with me
-I dont want
-This to be the end
-I dont want
-To have to say goodbye
-I dont want 
-This to be over
-but this is not over
-Ill see you someday down
-TITLE: I'll See You Someday Lyrics
-ARTIST: Xavior Rudd
-LYRICS:
-I've seen babies begging, scratching round for food to eat
-I've seen a big old tree still standing tall, two thousand years healthy
-I've seen the oldest woman shaking her head at what went wrong
-I drank water from a stream so fresh you could't see the water at all. 
-at all.
-
-I've seen streets so dirty, there is hardly a place to walk and
-I've fallen asleep to our bush birds, singing the prettiest song
-I've seen all of the pain and all the murder on tv and 
-I've stood free on soild waves, mother earths greatest treats
-
-Oh peace on earth that i know
-Sending us out to war my friend 
-this place my home from sky to ground
-see the universe conneted from the inside  
-
-I've seen people screaming at the car that cut them off
-and ive felt the cleanest mountian air cleaning out my nose
-I've seen fast food chains nearly every place that i go 
-Ive had a belly full of the freshest fish speared with a single throw
-
-and i sing 
-Oh peace on earth that i know
-Sending us out to war my friend 
-this place my home from sky to ground
-see the universe conneted from the inside  
-
-there's been changes in weather like never before
-changing the winter and summer and spring
-many many people still listening to the earth and her song
-so is sing it strong
-
-Oh peace on earth that i know
-Sending us out to war my friend 
-this place my home from sky to ground
-see the universe conneted from the inside 
-
-in theses times of trouble in these times of war
-in theses times when our planet is it getting to warm
-it makes me simle to take a look around
-of this earth and this earth we can be so proud
-TITLE: Sky To Ground Lyrics
-ARTIST: Rodrigo Y Gabriela
-LYRICS:
-(instrumental)
-TITLE: Hanuman Lyrics
-ARTIST: James Yuill
-LYRICS:
-Be the greatest man in history
-The greatest man that you can be
-Just be
-
-Walk, walk out on the beach with me
-Walk out in the sea with me
-Just be
-
-All of the time you show me your love
-Sweet love
-And oh, how you know
-This sweet love
-
-Nights, cold nights wrapped in ecstasy
-Those times still perplexing be
-They just be
-
-All of the time you show me your love
-Sweet love
-And oh, how you know
-This sweet love
-
-All of the time you show me your love
-Sweet love
-And oh, how you know
-This sweet love, this sweet love
-This sweet love, this sweet love
-TITLE: This Sweet Love Lyrics
-ARTIST: David Berkeley
-LYRICS:
-Oh Shenandoah, I long to hear you*
-Away you rolling river.
-Oh Shenandoah, I long to hear you.
-Away, I'm going away,
-Cross the wide Missouri.
-
-‘Tis seven long years since I last saw you.
-Away you rolling river.
-‘Tis seven long years since I last saw you.
-Away I'm going away,
-Cross the wide Missouri.
-
-Oh Shenandoah, I love your daughter.
-Away you rolling river.
-Oh Shenandoah, I love your daughter.
-Away, I'm going way,
-Cross the wide Missouri.
-
-Oh Shenandoah, I long to hear you.
-Away you rolling river.
-Oh Shenandoah, I long to hear you.
-Away, I'm going away,
-Cross the wide Missouri.
-
-Oh Shenandoah, I'll never leave you.
-Away you rolling river.
-Oh Shenandoah, don't want to leave you.
-Away, I'm going away,
-Cross the wide Missouri.
-TITLE: Shenandoah Lyrics
-ARTIST: Kina Grannis
-LYRICS:
-Love, it's a special day*
-We should celebrate and appreciate
-That you and me found something pretty neat
-And I know some say this day is arbitrary
-
-But it's a good excuse
-Put our love to use
-Baby, I know what to do
-Baby, I will love you
-I'll love you
-I'll love you
-
-Love, I don't need those things
-I don't need no ring, I don't need anything
-But you with me, 'cause in your company
-I feel happy, oh so happy, and complete
-
-And it's a good excuse
-Put our love to use
-Baby, I know what to do
-Baby, I will love you
-I'll love you
-I'll love you
-
-So won't you be my honeybee
-Giving me kisses all the time
-Be mine, be my valentine
-
-So won't you be my honeybee
-Giving sweet kisses all the time
-Be mine, be my valentine
-Be my valentine
-TITLE: Valentine Lyrics
-ARTIST: Uniform Motion
-LYRICS:
-Salutary tongues that speak in turn. Waiting for their chance to make us yearn.
-The sounds and emotions spreading thin, we’ll sink the float that would not let us win.
-A solitary cheer that does not work. We cottoned on to all their taints and quirks.
-And fled to the mountains on a whim, watching all the mess behind us sink.
-And that’s no way to listen to our sonnet.
-They’re buzzing like a bee inside my bonnet.
-But the fools never listen to what I say.
-They’ve copied all their lines into a prayer.
-
-Fools, don’t listen to a word I say. Just look the other way.
-I’m not saying I’ve got much to say. Just look the other way.
-TITLE: Fools, Don't Listen To A Word I Say Lyrics
-ARTIST: Sophie Hunger
-LYRICS:
-Je n'ai pas peur de la route
-Faudrait voir, faut qu'on y goûte
-Des méandres au creux des reins
-Et tout ira bien là
-Le vent nous portera
-
-Ton message à la Grande Ourse
-Et la trajectoire de la course
-Un instantané de velours
-Même s'il ne sert à rien va
-Le vent l'emportera
-Tout disparaîtra mais
-Le vent nous portera
-
-La caresse et la mitraille
-Et cette plaie qui nous tiraille
-Le palais des autres jours
-D'hier et demain
-Le vent les portera
-
-Génetique en bandouillère
-Des chromosomes dans l'atmosphère
-Des taxis pour les galaxies
-Et mon tapis volant dis ?
-Le vent l'emportera
-Tout disparaîtra mais
-Le vent nous portera
-
-Ce parfum de nos années mortes
-Ce qui peut frapper à ta porte
-Infinité de destins
-On en pose un et qu'est-ce qu'on en retient?
-Le vent l'emportera
-
-Pendant que la marée monte
-Et que chacun refait ses comptes
-J'emmène au creux de mon ombre
-Des poussières de toi
-Le vent les portera
-Tout disparaîtra mais
-Le vent nous portera
-TITLE: Le Vent Nous Portera Lyrics
-ARTIST: Matt Corby
-LYRICS:
-Fear lives, in these bones
-I am helpless on, I'm so helpless on 
-my own
-
-We started giving in, our walls our wearing thin
-Our light is growing dim, we are
-So far from where we want to be
-There's nothing for me here
-So grab your coat, let's leave this place my dear
-
-The colours of my soul are seeking refuge
-In somebody elses arms
-Now I must try, to win them back somehow
-I've fallen hard and fallen short
-But love is not a winners game at all
-
-Now I must try to forget about it now
-
-Fear lives, in these bones
-I am, helpless on 
-I'm so helpless on my own
-
-And will time get the better of me,
-we'll have to wait and see,
-for now I'll keep floating down this dark abyss, of lonliness
-
-But before I leave, just one last kiss now
-
-The colours of my soul are seeking refuge
-In somebody elses arms,
-Now i must try to win them back somehow
-
-I've fallen hard, and fallen short 
-but love is not a winners game at all
-now I must try to forget about it now
-
-The colours of my soul are seeking refuge 
-in somebody elses arms
-now i must try to win them back somehow
-TITLE: Refuge (Acoustic) Lyrics
-ARTIST: We Are Trees
-LYRICS:
-You have nothing left to say
-Are we truly at the end
-How am I supposed to try 
-To pretend everything is alright
-TITLE: You Lyrics
-ARTIST: Matt Corby
-LYRICS:
-So I threw your letter into the flame
-And watched the fire regain
-And these words have done nothing for you
-As I did not read them through
-Now turned to ash in the flue
-
-And colors are dull
-As the feeling of the cold
-And memories fall
-As the fire is getting old
-Oh and I once more am now
-
-Don’t you fret I’ll find my way
-Carefully walking from the devil’s plane
-And I know why you did not follow me
-Pride swallowed me then led me astray
-
-And now the dark in me has now seen the day
-Oh my chill has now lost its way
-And these hands that once had helped me to pray
-They are limp in all their dismay
-Oh they fall in their disarray
-
-And colors are dull
-As the feeling of the cold
-And memories fall
-As the fire is getting old
-Oh and I once more am now
-
-Oh don’t you fret I’ll find my way
-Carefully walking from the devil’s plane
-And I know why you did not follow me
-Pride swallowed me then led me astray
-TITLE: Untitled (Into the Flame) Lyrics
 /END LYRICS
+

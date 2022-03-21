@@ -21,10 +21,6 @@ def _parse_genres(url):
     return parsed_genres
 
 
-def _clean_list(song_list):
-    return [list(i) for i in {*[tuple(sorted(i)) for i in song_list]}]
-
-
 def _scrape_lyrics(root_url, genres_to_scrape):
     for g in genres_to_scrape:
         songs = []
@@ -37,18 +33,18 @@ def _scrape_lyrics(root_url, genres_to_scrape):
                     pagetitle = song_soup.find('div', {'class': 'pagetitle'})
                     pagetitle_h1 = pagetitle.findChild('h1', recursive=False)
                     artist_and_title = str(pagetitle_h1.get_text()).split(' - ')
-                    song.append('TITLE: ' + artist_and_title[1])
                     song.append('ARTIST: ' + artist_and_title[0])
+                    song.append('TITLE: ' + artist_and_title[1])
                     song.append('LYRICS:\n' + str(song_soup.find('p', {'id': 'songLyricsDiv'}).get_text()))
                     songs.append(song)
                 except Exception:
                     print('Skipping.')
-        songs = _clean_list(songs)
+        songs = songs[1::2]
         f = codecs.open('baseline/genre_' + g[0] + '.txt', 'w+', 'utf-8')
         for s in songs:
             for d in s:
                 f.write(d + '\n')
-        f.write('/END LYRICS\n')
+            f.write('/END LYRICS\n\n')
         f.close()
 
 
