@@ -208,7 +208,7 @@ class GAN():
 		# get the word dictionary from the data loader
 		wordDict = self.dl.getSongWordDict(scaled=False)
 
-		file = open('./savedSongs/' + 'generator_model_' + str(epoch+1) + '_songs.txt', 'a')
+		file = open('./savedSongs/' + 'generator_model_' + str(epoch+1) + '_songs.txt', 'w')
 		for i in range(len(examples)):
 			try:
 				file.write('\nSong #{count}\n'.format(count=i+1))
