@@ -14,9 +14,9 @@ class GAN():
 
     def __init__(self, latent_dim):
         self.latent_dim = latent_dim
-        self.lowResAmount = .25
+        self.low_res_amount = .25
         self.discrimConvCount = 2
-        self.dl = DataLoader(low_res_amount=self.lowResAmount)
+        self.dl = DataLoader(low_res_amount=self.low_res_amount)
 
     def load_real_samples(self):
         # load the data
