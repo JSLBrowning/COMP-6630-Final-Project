@@ -1,12 +1,12 @@
 # https://machinelearningmastery.com/how-to-develop-a-generative-adversarial-network-for-an-mnist-handwritten-digits-from-scratch-in-keras/
 
+from keras.layers import Dense, Conv2D, Flatten, Dropout, LeakyReLU
+from keras.layers import Reshape, Conv2DTranspose
+from keras.models import Sequential
+from keras.optimizers import Adam
 from numpy import expand_dims, ones, zeros, vstack, full
-from numpy.random import rand, randint, randn
-import tensorflow as tf
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, LeakyReLU
-from tensorflow.keras.layers import Reshape, Conv2DTranspose
+from numpy.random import randint, randn
+
 from dataloader import DataLoader
 
 
@@ -16,7 +16,7 @@ class GAN():
         self.latent_dim = latent_dim
         self.lowResAmount = .25
         self.discrimConvCount = 2
-        self.dl = DataLoader(lowResAmount=self.lowResAmount)
+        self.dl = DataLoader(low_res_amount=self.lowResAmount)
 
     def load_real_samples(self):
         # load the data

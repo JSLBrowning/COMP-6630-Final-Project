@@ -2,19 +2,19 @@ import numpy as np
 import re
 
 
-class DataLoader():
+class DataLoader:
 
     # lowResAmount is the percentage that we
     # would like to reduce the
-    def __init__(self, lowResAmount=.25):
+    def __init__(self, low_res_amount=.25):
         self.data = []
         self.allSongs = []
         self.songWordDict = {}  # a dictionary of unique lyric words
         self.songWordDictScaled = {}
         self.uniqueWordCount = None
-        self.numpyArrs = []
+        self.numpy_arrays = []
         self.maxDimension = None
-        self.lowResAmount = lowResAmount
+        self.lowResAmount = low_res_amount
 
     def loadData(self):
         singleSong = []

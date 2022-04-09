@@ -1,21 +1,18 @@
 #!/usr/bin/env python3
 
-import numpy as np
-import tensorflow as tf
-from tensorflow.keras.preprocessing.text import Tokenizer
-from tensorflow.keras.preprocessing.sequence import pad_sequences
-from tensorflow.keras.utils import to_categorical
-from tensorflow.keras.models import Sequential
-<<<<<<< Updated upstream
-from tensorflow.keras.layers import LSTM, Dense, Embedding, Bidirectional
-from tensorflow.keras import regularizers
-=======
->>>>>>> Stashed changes
-from tensorflow.keras.optimizers import Adam
-from random import randrange
 import os
 import sys
+from random import randrange
 
+import numpy as np
+import tensorflow as tf
+from keras import regularizers
+from keras.layers import LSTM
+from keras.models import Sequential
+from keras.optimizers import Adam
+from keras.preprocessing.sequence import pad_sequences
+from keras.preprocessing.text import Tokenizer
+from keras.utils import to_categorical
 
 '''enable tensorflow to run on CPU. The GPU on my computer locked up the memory
 and wouldn't release it. I tried several tests, but was unable to run this code again
@@ -190,9 +187,9 @@ class LSTMLyricGen:
             # build model
             self.model = Sequential(
                 [
-                    # the embedding layer requires in input_dim of the total number of unique words (size of vocabulary)
-                    # and an output_dim which specifies the number of word embedding dimensions we want. Since this model
-                    # uses the GloVe 100D we wil use 100 as our out_dim
+                    # the embedding layer requires in input_dim of the total number of unique words (size of
+                    # vocabulary) and an output_dim which specifies the number of word embedding dimensions we want.
+                    # Since this model uses the GloVe 100D we wil use 100 as our out_dim
                     tf.keras.layers.Embedding(
                         input_dim=self.vocabulary_size,
                         output_dim=self.gloveDim,
