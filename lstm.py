@@ -157,7 +157,7 @@ class LSTMLyricGen:
 
         # processes a word embedding dictionary to help the model
         # better understand contexual relationships among the words
-		
+
         if self.gloveFile:
             embeddings_index = {}
 
@@ -172,10 +172,10 @@ class LSTMLyricGen:
                         coeffs = np.array(values[1:], dtype="float32")
                         embeddings_index[word] = coeffs
 
-			# print(dict(list(embeddings_index.items())[0:2]))
+            # print(dict(list(embeddings_index.items())[0:2]))
 
-			# create a matrix which contains words from the embedding dictionary
-			# for words only in the data vocabulary
+            # create a matrix which contains words from the embedding dictionary
+            # for words only in the data vocabulary
 
             self.embedding_matrix = np.zeros((self.vocabulary_size, self.gloveDim))
 
@@ -185,7 +185,7 @@ class LSTMLyricGen:
                     self.embedding_matrix[i] = embedding_vector
 
     def buildModel(self):
-		
+
         if self.gloveFile:
             # build model
             self.model = Sequential(
@@ -199,7 +199,7 @@ class LSTMLyricGen:
                         weights=[self.embedding_matrix],
                         input_length=self.max_seq_length - 1,
                         trainable=False,
-					),
+                    ),
                     tf.keras.layers.Bidirectional(
                         tf.keras.layers.LSTM(256, return_sequences=True)
                     ),
