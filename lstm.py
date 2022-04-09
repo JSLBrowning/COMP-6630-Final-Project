@@ -9,10 +9,10 @@ import tensorflow as tf
 from keras import regularizers
 from keras.layers import LSTM
 from keras.models import Sequential
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from keras.preprocessing.sequence import pad_sequences
 from keras.preprocessing.text import Tokenizer
-from keras.utils import to_categorical
+from tensorflow.keras.utils import to_categorical
 
 '''enable tensorflow to run on CPU. The GPU on my computer locked up the memory
 and wouldn't release it. I tried several tests, but was unable to run this code again

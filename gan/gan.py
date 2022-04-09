@@ -3,7 +3,7 @@
 from keras.layers import Dense, Conv2D, Flatten, Dropout, LeakyReLU
 from keras.layers import Reshape, Conv2DTranspose
 from keras.models import Sequential
-from keras.optimizers import Adam
+from tensorflow.keras.optimizers import Adam
 from numpy import expand_dims, ones, zeros, vstack, full
 from numpy.random import randint, randn
 
