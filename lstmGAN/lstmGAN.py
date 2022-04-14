@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-#TODO
-'''Must downgrade numpy== 1.19.5
+# TODO
+"""Must downgrade numpy== 1.19.5
 must pip install pillow
 
 Source: https://www.kaggle.com/code/function9/bidirectional-lstm-gan-music-generation/notebook
@@ -11,27 +11,21 @@ Source: https://www.kaggle.com/code/function9/bidirectional-lstm-gan-music-gener
 To import a saved model
 
 model = load_model('./LSTM_generator.h5')
-
-
-
-'''
-
-
+"""
 
 from __future__ import print_function, division
 from tensorflow.keras.datasets import mnist
-#from keras.layers import Input, Dense, Reshape, Flatten, Dropout, Bidirectional, LSTM, Reshape, RepeatVector, TimeDistributed
-from tensorflow.keras.layers import BatchNormalization, Activation
+# from keras.layers import Input, Dense, Reshape, Flatten, Dropout, Bidirectional, LSTM, Reshape, RepeatVector,
+# TimeDistributed
 
-from tensorflow.keras.layers import UpSampling2D, Conv2D
 from tensorflow.keras.models import Sequential, Model
-#from keras.optimizers import Adam
-from numpy import expand_dims, ones, zeros, vstack, full
+# from keras.optimizers import Adam
 from numpy.random import rand, randint, randn
 import tensorflow as tf
-from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
-from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, LeakyReLU,Input, Dense, Bidirectional, LSTM, RepeatVector, TimeDistributed
+from tensorflow.keras.layers import Dense, Conv2D, Flatten, Dropout, LeakyReLU, Input, Dense, Bidirectional, LSTM, \
+    RepeatVector, TimeDistributed
 from tensorflow.keras.layers import Reshape, Conv2DTranspose
 from dataloader import DataLoader
 import matplotlib.pyplot as plt
@@ -45,13 +39,13 @@ if run_gpu == 'n':
     os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 
-
 def load_data():
-    x_train = np.load(r'./answers.npy',allow_pickle=True)
-    x_train = x_train.reshape(721,4,4)
+    x_train = np.load(r'./answers.npy', allow_pickle=True)
+    x_train = x_train.reshape(721, 4, 4)
     return x_train
 
-class LSTMGAN():
+
+class LSTMGAN:
     def __init__(self):
         # Input shape
         self.img_rows = 4
@@ -64,14 +58,14 @@ class LSTMGAN():
         # Build and compile the discriminator
         self.discriminator = self.build_discriminator()
         self.discriminator.compile(loss='binary_crossentropy',
-            optimizer=optimizer,
-            metrics=['accuracy'])
+                                   optimizer=optimizer,
+                                   metrics=['accuracy'])
 
         # Build the generator
         self.generator = self.build_generator()
 
         # The generator takes noise as input and generates song
-        z = Input(shape=(4,4))
+        z = Input(shape=(4, 4))
         img = self.generator(z)
 
         # For the combined model we will only train the generator
@@ -94,16 +88,16 @@ class LSTMGAN():
         model.add(LeakyReLU(alpha=0.2))
         model.add(Bidirectional(LSTM(128)))
         model.add(LeakyReLU(alpha=0.2))
-        #specifying output to have 40 timesteps
+        # specifying output to have 40 timesteps
         model.add(RepeatVector(16))
-        #specifying 1 feature as the output
-        model.add(Bidirectional(LSTM(128, return_sequences=True, dropout = 0.2)))
+        # specifying 1 feature as the output
+        model.add(Bidirectional(LSTM(128, return_sequences=True, dropout=0.2)))
         model.add(LeakyReLU(alpha=0.2))
-        model.add(Bidirectional(LSTM(128, return_sequences=True, dropout = 0.2)))
+        model.add(Bidirectional(LSTM(128, return_sequences=True, dropout=0.2)))
         model.add(LeakyReLU(alpha=0.2))
-        model.add(Bidirectional(LSTM(128, return_sequences=True, dropout = 0.2)))
+        model.add(Bidirectional(LSTM(128, return_sequences=True, dropout=0.2)))
         model.add(LeakyReLU(alpha=0.2))
-        model.add(Dropout(0.3))   
+        model.add(Dropout(0.3))
         model.add(TimeDistributed(Dense(128)))
         model.add(LeakyReLU(alpha=0.2))
         model.add(Dropout(0.4))
@@ -114,7 +108,7 @@ class LSTMGAN():
         model.add(LeakyReLU(alpha=0.2))
         model.summary()
 
-        noise = Input(shape=(4,4))
+        noise = Input(shape=(4, 4))
         img = model(noise)
 
         return Model(noise, img)
@@ -123,26 +117,25 @@ class LSTMGAN():
 
         model = Sequential()
 
-        model.add(Bidirectional(LSTM(128, activation = 'relu', return_sequences=True), input_shape=(16, 1)))
+        model.add(Bidirectional(LSTM(128, activation='relu', return_sequences=True), input_shape=(16, 1)))
         model.add(LeakyReLU(alpha=0.2))
-        model.add(Bidirectional(LSTM(128, activation = 'relu')))
+        model.add(Bidirectional(LSTM(128, activation='relu')))
         model.add(LeakyReLU(alpha=0.2))
         model.add(Dropout(0.4))
         model.add(RepeatVector(1))
-        model.add(TimeDistributed(Dense(128, activation = 'sigmoid')))
+        model.add(TimeDistributed(Dense(128, activation='sigmoid')))
         model.add(LeakyReLU(alpha=0.2))
         model.add(Dropout(0.4))
-        model.add(TimeDistributed(Dense(128, activation = 'relu')))
+        model.add(TimeDistributed(Dense(128, activation='relu')))
         model.add(LeakyReLU(alpha=0.2))
         model.add(Dropout(0.4))
-        model.add(TimeDistributed(Dense(1, activation = 'linear')))
+        model.add(TimeDistributed(Dense(1, activation='linear')))
         model.summary()
 
-        img = Input(shape=(16,1))
+        img = Input(shape=(16, 1))
         validity = model(img)
 
         return Model(img, validity)
-    
 
     def train(self, epochs, batch_size=128, save_interval=50):
 
@@ -153,8 +146,8 @@ class LSTMGAN():
         X_train = X_train / 128
 
         # Adversarial ground truths
-        valid = np.ones((batch_size,1,1))
-        fake = np.zeros((batch_size,1,1))
+        valid = np.ones((batch_size, 1, 1))
+        fake = np.zeros((batch_size, 1, 1))
 
         for epoch in range(epochs):
 
@@ -166,10 +159,10 @@ class LSTMGAN():
             idx = np.random.randint(0, X_train.shape[0], batch_size)
             imgs = X_train[idx]
             imgs = np.array(imgs)
-            imgs = imgs.reshape(len(imgs),16,1)
+            imgs = imgs.reshape(len(imgs), 16, 1)
 
             # Sample noise and generate a batch of new songs
-            noise = np.random.normal(0, 1, (batch_size,4,4))
+            noise = np.random.normal(0, 1, (batch_size, 4, 4))
             gen_imgs = self.generator.predict(noise)
 
             # Train the discriminator (real classified as ones and generated as zeros)
@@ -185,15 +178,13 @@ class LSTMGAN():
             g_loss = self.combined.train_on_batch(noise, valid)
 
             # Plot the progress
-            print ("%d [D loss: %f, acc.: %.2f%%] [G loss: %f]" % (epoch, d_loss[0], 100*d_loss[1], g_loss))
+            print("%d [D loss: %f, acc.: %.2f%%] [G loss: %f]" % (epoch, d_loss[0], 100 * d_loss[1], g_loss))
 
             # If at save interval => save model
             if epoch % save_interval == 0:
                 self.generator.save("LSTM_generator.h5")
-                
-                
+
+
 if __name__ == '__main__':
     lstmgan = LSTMGAN()
     lstmgan.train(epochs=1000, batch_size=20, save_interval=100)
-    
-    
