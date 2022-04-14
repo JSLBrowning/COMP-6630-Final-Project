@@ -146,9 +146,9 @@ class GAN():
 		# manually enumerate epochs
 		for i in range(n_epochs):
 			#prepare points in latent space as input for the generator
-			x_gan = generate_latent_points(latent_dim, n_batch)
+			x_gan = self.generate_latent_points(latent_dim, n_batch)
 			# create inverted labels for the fake samples
-			y_can = ones((n_batch, 1))
+			y_gan = ones((n_batch, 1))
 			# update the generator via the discriminator's error
 			gan_model.tran_on_batch(x_gan, y_gan)
 
