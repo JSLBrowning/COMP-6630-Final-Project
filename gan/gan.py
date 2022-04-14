@@ -6,6 +6,7 @@ from keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 from numpy import expand_dims, ones, zeros, vstack, full
 from numpy.random import randint, randn
+import matplotlib.pyplot as plt
 
 from dataloader import DataLoader
 
@@ -17,6 +18,8 @@ class GAN():
         self.low_res_amount = .25
         self.discrimConvCount = 2
         self.dl = DataLoader(low_res_amount=self.low_res_amount)
+        self.genLoss = []
+        self.discrimLoss = []
 
     def load_real_samples(self):
         # load the data
@@ -98,7 +101,7 @@ class GAN():
             _, fake_acc = model.train_on_batch(X_fake, y_fake)
 
             # summarize performance
-            print('>%d real=%.0f%% fake=%.0f%%' % (i + 1, real_acc * 100, fake_acc * 100))
+            #print('>%d real=%.0f%% fake=%.0f%%' % (i + 1, real_acc * 100, fake_acc * 100))
 
     def define_generator(self, maxDim, latentDim):
         model = Sequential()
@@ -179,7 +182,9 @@ class GAN():
             # summarize loss on this batch
 
             # evaluate the model performance
-            if (i + 1) % 10 == 0:
+            if (i + 1) % 5 == 0:
+                self.discrimLoss.append(d_loss)
+                self.genLoss.append(g_loss)
                 self.summarize_performance(i, g_model, d_model, dataset, latent_dim)
                 print('>%d, %d/%d, d=%.3f, g=%.3f' % (i + 1, j + 1, bat_per_epo, d_loss, g_loss))
 
@@ -194,7 +199,7 @@ class GAN():
         # evaluate discrminiator on fake examples
         _, acc_fake = d_model.evaluate(X_fake, y_fake, verbose=0)
         # summarize discrimiator performace
-        print('>Accuracy real: %.0f%%, fake: %.0f%%' % (acc_real * 100, acc_fake * 100))
+        #print('>Accuracy real: %.0f%%, fake: %.0f%%' % (acc_real * 100, acc_fake * 100))
         # save songs
         self.save_songs(X_fake, epoch)
         # save the generator model tile file
@@ -253,6 +258,16 @@ class GAN():
 
         self.train(g_Model, d_Model, gan_model, dataset, self.latent_dim)
 
+        plt.figure()
+        xAxis = range(0, 20)
+        plt.plot(self.discrimLoss)
+        plt.plot(self.genLoss)
+        plt.xticks(xAxis)
+        plt.title("Generator and Discriminator Loss")
+        plt.ylabel('Loss')
+        plt.xlabel('Epoch')
+        plt.legend(['Generator', 'Discriminator'], loc='upper right')
+        plt.show()
 
 if __name__ == "__main__":
     gan = GAN(latent_dim=250)

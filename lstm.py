@@ -3,6 +3,7 @@
 import os
 import sys
 from random import randrange
+import matplotlib.pyplot as plt
 
 import numpy as np
 import tensorflow as tf
@@ -43,7 +44,7 @@ class LSTMLyricGen:
         self.tokenizer = None
         self.ave_line_len = None
         self.max_line_len = 0
-        self.dataFilePath = "./data/baseline/"
+        self.dataFilePath = "./data/prev-baseline/"
         self.checkpointPath = "./data/checkpoints"
         print('What glove file do you want?')
         print('[small, medium, large, none]')
@@ -79,6 +80,9 @@ class LSTMLyricGen:
         # allows for higher dimensional vocabulary
         if self.gloveFile:
             self.gloveDim = int(self.gloveFile[-8:-5])
+
+    def getGloveSize(self):
+        return self.gloveInput
 
     def loadData(self):
         dataFiles = os.listdir(self.dataFilePath)
@@ -251,6 +255,8 @@ class LSTMLyricGen:
         history = self.model.fit(
             self.x_train, self.y_train, epochs=self.epoch_num, verbose=1, callbacks=[cp_callback])
 
+        return history
+
     def makePredictions(self, userInput):
         print('Output for lyric generation is saving into ./lyric_output.')
         sys.stdout = open(f'./lyric_outputs/{self.outputName}', 'w')
@@ -300,7 +306,31 @@ if __name__ == "__main__":
     lGen.buildModel()
     print("Building Model. - DONE")
     print("Training Model.")
-    lGen.fitModel()
+    history = lGen.fitModel()
+
+	# plot loss metric
+    plt.figure()
+    plt.plot(history.history['loss'])
+    if(lGen.getGloveSize()):
+        plt.title('lstm-' + lGen.getGloveSize() + '-glove Model Train Loss')
+    else:
+        plt.title('lstm-no-glove Model Train Loss')
+    plt.ylabel('Loss')
+    plt.xlabel('Epoch')
+    plt.show()
+
+	# plot accuracy metric
+    plt.figure()
+    plt.plot(history.history['accuracy'])	
+    if(lGen.getGloveSize()):
+        plt.title('lstm-' + lGen.getGloveSize() + '-glove Model Train Accuracy')
+    else:
+        plt.title('lstm-no-glove Model Train Accuracy')
+    plt.ylabel('Accuracy')
+    plt.xlabel('Epoch')
+    plt.show()
+
+
     print(f'Checkpoint saved into directory ./data/checkpoints')
     print("Training Model. - DONE")
     print("Type some words start lyric generation")
