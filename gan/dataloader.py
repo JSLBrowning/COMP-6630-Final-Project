@@ -98,7 +98,6 @@ class DataLoader:
         if pow(i, 2) > a:
             while not (i % (1 / self.lowResAmount) == 0):
                 i += 1
-            print(i)
             return i
         else:
             return self.getDimensions(a, i + 1)
@@ -109,10 +108,10 @@ if __name__ == '__main__':
 
     dl.loadData()
 
-    print(dl.data.shape)
+    #print(dl.data.shape)
 
     # print(dl.data[0])
 
     # print(dl.songWordDict)
-    print(dl.getUniqueWordCount())
+    #print(dl.getUniqueWordCount())
 # print(dl.getSongWordDict(scaled=True))
