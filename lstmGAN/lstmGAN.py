@@ -147,16 +147,16 @@ class LSTMGAN:
 		# get the word dictionary from the data loader
         wordDict = self.dl.getSongWordDict(scaled=False)
 
-		file = open('./savedSongs/generator_model_' + str(epoch + 1) + '_songs.txt', 'w')
-		for i in range(0, 10):
+        file = open('./savedSongs/generator_model_' + str(epoch + 1) + '_songs.txt', 'w')
+        for i in range(0, 10):
             random = np.random.normal(0, 1, (1, self.dl.getMaxDimension(), self.dl.getMaxDimension()))
             prediction = self.generator.predict(random)
             prediction = prediction * self.dl.getUniqueWordCount()
 
             prediction = prediction.reshape(self.dl.getMaxDimension()*self.dl.getMaxDimension(), 1)
-    		prediction = prediction.astype(int)
+            prediction = prediction.astype(int)
 
-        	#np.save('gan_prediction', prediction)
+            #np.save('gan_prediction', prediction)
     
             song = []
             previousWord = None
@@ -173,9 +173,9 @@ class LSTMGAN:
                         song.append(wordPredicted)
                         previousWord = wordPredicted
 
-            if not len(song) == 0 and not len(song) == 1:
-                file.write(' '.join(song) + '\n')
-				file.write('--------------------')
+                if not len(song) == 0 and not len(song) == 1:
+                    file.write(' '.join(song) + '\n')
+                    file.write('--------------------')
         file.close()
     
     def train(self, epochs, batch_size, save_interval):
@@ -225,8 +225,8 @@ class LSTMGAN:
 
             # If at save interval => save model
             if epoch % save_interval == 0:
-				# generate a few songs with this current generator
-				self.predict_and_save(epoch)
+	        # generate a few songs with this current generator
+                self.predict_and_save(epoch)
                 self.generator.save(f"./saved-model-states/LSTM_generator_epoch_{epoch}.h5")
 
 
