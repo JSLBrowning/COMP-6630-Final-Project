@@ -173,9 +173,9 @@ class LSTMGAN:
                         song.append(wordPredicted)
                         previousWord = wordPredicted
 
-                if not len(song) == 0 and not len(song) == 1:
-                    file.write(' '.join(song) + '\n')
-                    file.write('--------------------')
+            if not len(song) == 0 and not len(song) == 1:
+                file.write(' '.join(song))
+                file.write('\n--------------------\n')
         file.close()
     
     def train(self, epochs, batch_size, save_interval):
