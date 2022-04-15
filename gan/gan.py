@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from dataloader import DataLoader
 
 
-class GAN():
+class GAN:
 
     def __init__(self, latent_dim):
         self.latent_dim = latent_dim
