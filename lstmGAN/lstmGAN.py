@@ -10,7 +10,7 @@ Source: https://www.kaggle.com/code/function9/bidirectional-lstm-gan-music-gener
 
 To import a saved model
 
-model = load_model('./LSTM_generator.h5')
+model = load_model('./LSTM_generator.h5')"""
 
 from tensorflow.keras.datasets import mnist
 # from keras.layers import Input, Dense, Reshape, Flatten, Dropout, Bidirectional, LSTM, Reshape, RepeatVector,
