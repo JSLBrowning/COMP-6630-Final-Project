@@ -139,8 +139,58 @@ class LSTMGAN:
         validity = model(img)
 
         return Model(img, validity)
+    
+    def predict(self):
+        random = np.random.normal(0, 1, (1, self.dl.getMaxDimension(), self.dl.getMaxDimension()))
 
-    def train(self, epochs, batch_size=128, save_interval=50):
+        prediction = self.generator.predict(random)
+
+        prediction = prediction * self.dl.getUniqueWordCount()
+
+        print(prediction)
+    
+    
+    # create and save a file generated songs
+    def save_songs(self, examples, epoch, n=10):
+
+        # get the word dictionary from the data loader
+        wordDict = self.dl.getSongWordDict(scaled=False)
+
+        file = open('./savedSongs/' + 'generator_model_' + str(epoch + 1) + '_songs.txt', 'w')
+        for i in range(len(examples)):
+            try:
+                file.write('\nSong #{count}\n'.format(count=i + 1))
+                for line in examples[i]:
+                    songLine = []
+                    for word in line:
+
+                        # it is likely that the exact number predicted will not
+                        # match up to a value in the wordDict
+                        # so we will find the closest one that does
+                        wordDictValues = list(wordDict.values())
+                        
+                        # scale the word predicted back up to normal levels
+                        word = round(word[0] * self.dl.getUniqueWordCount())
+                        
+                        
+                        if not word == 0:
+                            print('c')
+                            wordPredicted = list(wordDict.keys())[list(wordDict.values()).index(word)]
+                            wordPredicted = wordPredicted.strip()
+                            if not wordPredicted == '':
+                                songLine.append(wordPredicted)
+
+                    if not len(songLine) == 0 and not len(songLine) == 1:
+                        file.write(' '.join(songLine) + '\n')
+                file.write('\n')
+            except Exception as e:
+                print("Unable to write to song file")
+                print(e)
+
+        file.close()
+    
+    
+    def train(self, epochs, batch_size, save_interval):
 
         # Load the dataset
         X_train = self.data
@@ -169,6 +219,10 @@ class LSTMGAN:
             noise = np.random.normal(0, 1, (batch_size,self.dl.getMaxDimension(),self.dl.getMaxDimension()))
 
             gen_imgs = self.generator.predict(noise)
+            
+            #Save generator output songs
+            self.save_songs(examples = gen_imgs,epoch = epoch, n=10)
+            
 
             # Train the discriminator (real classified as ones and generated as zeros)
             d_loss_real = self.discriminator.train_on_batch(imgs, valid)
@@ -187,7 +241,7 @@ class LSTMGAN:
 
             # If at save interval => save model
             if epoch % save_interval == 0:
-                self.generator.save("LSTM_generator.h5")
+                self.generator.save(f"./saved-model-states/LSTM_generator_epoch_{epoch}.h5")
 
 
 if __name__ == '__main__':
@@ -197,4 +251,5 @@ if __name__ == '__main__':
     print(dl.getMaxDimension())
     print(dl.getUniqueWordCount())
     lstmgan = LSTMGAN()
-    lstmgan.train(epochs=1000, batch_size=20, save_interval=100)
+    lstmgan.train(epochs=20, batch_size=20, save_interval=2)
+    lstmgan.predict()
