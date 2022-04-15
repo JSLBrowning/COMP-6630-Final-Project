@@ -142,55 +142,41 @@ class LSTMGAN:
 
         return Model(img, validity)
     
-    def predict(self):
-        random = np.random.normal(0, 1, (1, self.dl.getMaxDimension(), self.dl.getMaxDimension()))
-
-        prediction = self.generator.predict(random)
-
-        prediction = prediction * self.dl.getUniqueWordCount()
-        np.save('gan_prediction', prediction)
-
-        print(prediction)
-    
-    
-    # create and save a file generated songs
-    def save_songs(self, examples, epoch, n=10):
-
-        # get the word dictionary from the data loader
+    def predict_and_save(self, epoch):
+		
+		# get the word dictionary from the data loader
         wordDict = self.dl.getSongWordDict(scaled=False)
 
-        file = open('./savedSongs/' + 'generator_model_' + str(epoch + 1) + '_songs.txt', 'w')
-        for i in range(len(examples)):
-            try:
-                file.write('\nSong #{count}\n'.format(count=i + 1))
-                for line in examples[i]:
-                    songLine = []
-                    for word in line:
+		file = open('./savedSongs/generator_model_' + str(epoch + 1) + '_songs.txt', 'w')
+		for i in range(0, 10):
+            random = np.random.normal(0, 1, (1, self.dl.getMaxDimension(), self.dl.getMaxDimension()))
+            prediction = self.generator.predict(random)
+            prediction = prediction * self.dl.getUniqueWordCount()
 
-                        # it is likely that the exact number predicted will not
-                        # match up to a value in the wordDict
-                        # so we will find the closest one that does
-                        wordDictValues = list(wordDict.values())
-                        
-                        # scale the word predicted back up to normal levels
-                        word = round(word[0] * self.dl.getUniqueWordCount())
-                        
-                        
-                        if not word == 0:
-                            wordPredicted = list(wordDict.keys())[list(wordDict.values()).index(word)]
-                            wordPredicted = wordPredicted.strip()
-                            if not wordPredicted == '':
-                                songLine.append(wordPredicted)
+            prediction = prediction.reshape(self.dl.getMaxDimension()*self.dl.getMaxDimension(), 1)
+    		prediction = prediction.astype(int)
 
-                    if not len(songLine) == 0 and not len(songLine) == 1:
-                        file.write(' '.join(songLine) + '\n')
-                file.write('\n')
-            except Exception as e:
-                print("Unable to write to song file")
-                print(e)
-
-        file.close()
+        	#np.save('gan_prediction', prediction)
     
+            song = []
+            previousWord = None
+            for word in prediction:
+                # it is likely that the exact number predicted will not
+                # match up to a value in the wordDict
+                # so we will find the closest one that does
+                wordDictValues = list(wordDict.values()) 
+                        
+                if not word == 0:
+                    wordPredicted = list(wordDict.keys())[list(wordDict.values()).index(word)]
+                    wordPredicted = wordPredicted.strip()
+                    if not wordPredicted == '' and wordPredicted != previousWord:
+                        song.append(wordPredicted)
+                        previousWord = wordPredicted
+
+            if not len(song) == 0 and not len(song) == 1:
+                file.write(' '.join(song) + '\n')
+				file.write('--------------------')
+        file.close()
     
     def train(self, epochs, batch_size, save_interval):
 
@@ -221,13 +207,7 @@ class LSTMGAN:
             noise = np.random.normal(0, 1, (batch_size,self.dl.getMaxDimension(),self.dl.getMaxDimension()))
 
             gen_imgs = self.generator.predict(noise)
-            
-            
-            #TODO: Fix save_songs function
-            #Save generator output songs
-            # self.save_songs(examples = gen_imgs,epoch = epoch, n=10)
-            
-
+                       
             # Train the discriminator (real classified as ones and generated as zeros)
             d_loss_real = self.discriminator.train_on_batch(imgs, valid)
             d_loss_fake = self.discriminator.train_on_batch(gen_imgs, fake)
@@ -245,6 +225,8 @@ class LSTMGAN:
 
             # If at save interval => save model
             if epoch % save_interval == 0:
+				# generate a few songs with this current generator
+				self.predict_and_save(epoch)
                 self.generator.save(f"./saved-model-states/LSTM_generator_epoch_{epoch}.h5")
 
 
@@ -355,10 +337,8 @@ class LSTMGAN:
 if __name__ == '__main__':
     dl = DataLoader()
     dl.loadData()
-    print(dl.getMaxDimension())
-    print(dl.getUniqueWordCount())
+    #print(dl.getMaxDimension())
+    #print(dl.getUniqueWordCount())
     lstmgan = LSTMGAN()
     lstmgan.train(epochs=20, batch_size=20, save_interval=2)
-    lstmgan.predict()
-# print(dl.getSongWordDict(scaled=True))
 
