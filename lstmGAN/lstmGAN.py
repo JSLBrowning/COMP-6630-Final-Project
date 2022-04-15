@@ -147,7 +147,7 @@ class LSTMGAN:
 		# get the word dictionary from the data loader
         wordDict = self.dl.getSongWordDict(scaled=False)
 
-        file = open('./savedSongs/generator_model_' + str(epoch + 1) + '_songs.txt', 'w')
+        file = open('./savedSongs/generator_model_' + str(epoch) + '_songs.txt', 'w')
         for i in range(0, 10):
             random = np.random.normal(0, 1, (1, self.dl.getMaxDimension(), self.dl.getMaxDimension()))
             prediction = self.generator.predict(random)
