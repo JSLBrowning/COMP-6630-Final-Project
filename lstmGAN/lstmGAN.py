@@ -220,8 +220,10 @@ class LSTMGAN:
 
             gen_imgs = self.generator.predict(noise)
             
+            
+            #TODO: Fix save_songs function
             #Save generator output songs
-            self.save_songs(examples = gen_imgs,epoch = epoch, n=10)
+            # self.save_songs(examples = gen_imgs,epoch = epoch, n=10)
             
 
             # Train the discriminator (real classified as ones and generated as zeros)
